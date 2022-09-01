@@ -115,6 +115,21 @@ function connect() {
             }
         }
     }
+
+    for (let i = 0; i < particles_array.length; i++) {
+        let distance = ((particles_array[i].x - mouse.x) * (particles_array[i].x - mouse.x))
+            + ((particles_array[i].y - mouse.y) * (particles_array[i].y - mouse.y));
+
+        if (distance < (canvas.width / 10) * (canvas.height / 10)) {
+            opacity_value = 1 - (distance / 20000);
+            ctx.strokeStyle = 'rgba(255, 255, 255,' + opacity_value + ')';
+            ctx.lineWidth = 1;
+            ctx.beginPath();
+            ctx.moveTo(particles_array[i].x, particles_array[i].y);
+            ctx.lineTo(mouse.x, mouse.y);
+            ctx.stroke();
+        }
+    }
 }
 
 // Animation loop
