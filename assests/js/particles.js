@@ -81,7 +81,7 @@ class Particle {
 // Create particle array
 function init() {
     particles_array = [];
-    let num_particles = (canvas.height * canvas.width) / 4000;
+    let num_particles = (canvas.height * canvas.width) / 2000;
 
     for (let i = 0; i < num_particles; i++) {
         let size = (Math.random() * 2) + 1;
@@ -113,6 +113,21 @@ function connect() {
                 ctx.lineTo(particles_array[j].x, particles_array[j].y);
                 ctx.stroke();
             }
+        }
+    }
+
+    for (let i = 0; i < particles_array.length; i++) {
+        let distance = ((particles_array[i].x - mouse.x) * (particles_array[i].x - mouse.x))
+            + ((particles_array[i].y - mouse.y) * (particles_array[i].y - mouse.y));
+
+        if (distance < (canvas.width / 10) * (canvas.height / 10)) {
+            opacity_value = 1 - (distance / 20000);
+            ctx.strokeStyle = 'rgba(255, 255, 255,' + opacity_value + ')';
+            ctx.lineWidth = 1;
+            ctx.beginPath();
+            ctx.moveTo(particles_array[i].x, particles_array[i].y);
+            ctx.lineTo(mouse.x, mouse.y);
+            ctx.stroke();
         }
     }
 }
