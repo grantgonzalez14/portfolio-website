@@ -112,27 +112,38 @@ footer {
 }
 
 .education-container {
+  display: flex;
   background-color: white;
   max-width: 60.75rem;
   margin: 0 auto;
   padding: 0.938rem;
   border-radius: 5px;
   box-shadow: 0 3px 10px var(--primary-shadow);
+  justify-content: left;
 }
 
 .education-container img {
-  padding: 1.25rem;
+  padding: 0.25rem;
+}
+
+.education-info h3 {
+  position: relative;
+  top: 3rem;
+  left: 3rem;
+  display: flex;
+  justify-content: left;
+  margin-bottom: 1rem;
 }
 
 .skills {
   max-width: 68.75rem;
   margin: auto;
   text-align: center;
-  margin-top: 2.5rem;
 }
 
 .skill-header {
   margin-bottom: 1rem;
+  margin-top: 12rem;
 }
 
 .skills-wrapper img {
