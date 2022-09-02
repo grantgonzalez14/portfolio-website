@@ -80,6 +80,13 @@ nav ul li {
   font-weight: var(--bold-font);
 }
 
+footer {
+  background-color: var(--bg-color);
+  padding: 1.25rem;
+  text-align: center;
+  margin: 2rem 0 0;
+}
+
 #particle-section {
   margin: -10px;
   background-color: black;
@@ -233,6 +240,72 @@ nav ul li {
   border: 2px solid var(--secondary-text-color);
   color: var(--primary-text-color);
   cursor: pointer;
+}
+
+.scroll-up {
+  position: fixed;
+  right: 0.5%;
+  bottom: 3%;
+  cursor: pointer;
+}
+
+.up-arrow {
+  width: 3rem;
+  height: 3rem;
+}
+
+@media screen and (max-width: 720px) {
+  nav {
+    padding: 1.5rem 1rem;
+  }
+  nav ul {
+    position: fixed;
+    background-color: var(--bg-color);
+    flex-direction: row;
+    top: 27px;
+    left: 10%;
+    width: 80%;
+    text-align: center;
+    transform: translateX(120%);
+    transition: transform 0.5s ease-in;
+  }
+  nav ul li {
+    margin: 8px;
+  }
+  .burger-menu {
+    display: block;
+  }
+  nav ul.show {
+    transform: translateX(0);
+  }
+  .icon {
+    width: 5.875rem;
+    height: 5.25rem;
+  }
+  .projects-container {
+    flex-direction: column;
+  }
+  .project-container {
+    width: 20.875rem;
+  }
+  .contact-form-container {
+    max-width: 23.75rem;
+  }
+}
+@media screen and (max-width: 420px) {
+  .hero-img {
+    height: 37.5rem;
+    width: 23rem;
+  }
+  .bio {
+    width: 18.3rem;
+  }
+  .project-container {
+    width: 17.875rem;
+  }
+  .contact-form-container {
+    max-width: 17.75rem;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
