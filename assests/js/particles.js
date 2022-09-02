@@ -47,30 +47,6 @@ class Particle {
             this.directionY = -this.directionY;
         }
 
-        // Check collision detection - mouse position / particle position
-        let dx = mouse.x - this.x;
-        let dy = mouse.y - this.y;
-        let distance = Math.sqrt(dx*dx + dy*dy);
-        let direction_change = 2;
-
-        if (distance < mouse.radius + this.size) {
-            if (mouse.x < this.x && this.x < canvas.width - this.size * 10) {
-                this.x -= direction_change;
-            }
-
-            if (mouse.x > this.x && this.x > this.size * 10) {
-                this.x += direction_change;
-            }
-
-            if (mouse.y < this.y && this.y < canvas.height - this.size * 10) {
-                this.y -= direction_change;
-            }
-
-            if (mouse.y > this.y && this.y > this.size * 10) {
-                this.y += direction_change;
-            }
-        }
-
         // Move then draw particle
         this.x += this.directionX / 3;
         this.y += this.directionY / 3;
@@ -126,7 +102,7 @@ function connect() {
             ctx.lineWidth = 1;
             ctx.beginPath();
             ctx.moveTo(particles_array[i].x, particles_array[i].y);
-            ctx.lineTo(mouse.x, mouse.y);
+            ctx.lineTo(mouse.x + 10, mouse.y - 66);
             ctx.stroke();
         }
     }
