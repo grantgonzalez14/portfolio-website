@@ -178,6 +178,10 @@ footer {
   color: var(--secondary-text-color);
 }
 
+.project-card .project-link a:hover {
+  color: var(--bold-font)
+}
+
 .contact {
   margin-top: 2rem;
 }
