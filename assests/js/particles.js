@@ -102,7 +102,7 @@ function connect() {
             ctx.lineWidth = 1;
             ctx.beginPath();
             ctx.moveTo(particles_array[i].x, particles_array[i].y);
-            ctx.lineTo(mouse.x + 10, mouse.y - 66);
+            ctx.lineTo(mouse.x, mouse.y);
             ctx.stroke();
         }
     }
