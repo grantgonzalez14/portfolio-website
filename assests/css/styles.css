@@ -101,6 +101,29 @@ footer {
   display: none;
 }
 
+.education {
+  max-width: 80rem;
+  margin: 1rem auto;
+  text-align: center;
+}
+
+.education-header {
+  margin-bottom: 1rem;
+}
+
+.education-container {
+  background-color: white;
+  max-width: 60.75rem;
+  margin: 0 auto;
+  padding: 0.938rem;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px var(--primary-shadow);
+}
+
+.education-container img {
+  padding: 1.25rem;
+}
+
 .skills {
   max-width: 68.75rem;
   margin: auto;
