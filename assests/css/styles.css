@@ -113,6 +113,33 @@ footer {
   display: none;
 }
 
+.about {
+  max-width: 80rem;
+  margin: 1rem auto;
+  text-align: center;
+}
+
+.about-header {
+  margin-bottom: 1rem;
+  margin-top: 3rem;
+}
+
+.about-container {
+  display: flex;
+  background-color: white;
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 0.938rem;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px var(--primary-shadow);
+  justify-content: center;
+}
+
+.about-container .bio {
+  display: flex;
+  text-align: center;
+}
+
 .education {
   max-width: 80rem;
   margin: 1rem auto;

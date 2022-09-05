@@ -1,7 +1,7 @@
 const canvas = document.getElementById('canvas1');
 const ctx = canvas.getContext('2d');
 canvas.width = window.innerWidth;
-canvas.height = window.innerHeight / 1.75;
+canvas.height = window.innerHeight / 1.65;
 let particle_array = [];
 let adjust_y = 10;
 
