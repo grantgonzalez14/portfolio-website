@@ -6,8 +6,8 @@ let particle_array = [];
 let adjust_y = 10;
 let xpos1 = window.innerWidth * 0.008;
 let xpos2 = window.innerWidth * 0.02;
-let ypos1 = window.innerHeight * 0.015;
-let ypos2 = window.innerHeight * 0.035;
+let ypos1 = window.innerHeight * 0.02;
+let ypos2 = window.innerHeight * 0.04;
 let font_size = window.innerWidth / 90;
 
 // Handle mouse
