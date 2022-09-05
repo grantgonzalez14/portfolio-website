@@ -38,11 +38,11 @@ navLink.forEach((link) => {
 
        switch (section.slice(1, section.length)) {
            case "about":
-               y = about_rect.y;
+               y = about_rect.y - 120;
                break;
 
-           case "eduction":
-               y = education_rect.y;
+           case "education":
+               y = education_rect.y - 110;
                break;
 
            case "skills":

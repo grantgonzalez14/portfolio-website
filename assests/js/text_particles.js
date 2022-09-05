@@ -4,8 +4,8 @@ canvas.width = window.innerWidth;
 canvas.height = window.innerHeight / 1.65;
 let particle_array = [];
 let adjust_y = 10;
-let xpos1 = window.innerWidth * 0.01;
-let xpos2 = window.innerWidth * 0.022;
+let xpos1 = window.innerWidth * 0.008;
+let xpos2 = window.innerWidth * 0.02;
 let ypos1 = window.innerHeight * 0.015;
 let ypos2 = window.innerHeight * 0.035;
 let font_size = window.innerWidth / 90;
@@ -25,8 +25,6 @@ window.addEventListener('mousemove', function(event) {
 
 ctx.fillStyle = 'white';
 ctx.font = font_size + 'px Verdana';
-console.log(xpos1, xpos2);
-console.log(ypos1, ypos2);
 ctx.fillText('Grant Gonzalez', xpos1, ypos1);
 const text_coordinates = ctx.getImageData(0, 0, window.innerWidth, 100);
 ctx.fillText('CS Student', xpos2, ypos2)
