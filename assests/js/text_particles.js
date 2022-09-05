@@ -4,6 +4,11 @@ canvas.width = window.innerWidth;
 canvas.height = window.innerHeight / 1.65;
 let particle_array = [];
 let adjust_y = 10;
+let xpos1 = window.innerWidth * 0.01;
+let xpos2 = window.innerWidth * 0.022;
+let ypos1 = window.innerHeight * 0.015;
+let ypos2 = window.innerHeight * 0.035;
+let font_size = window.innerWidth / 90;
 
 // Handle mouse
 const mouse = {
@@ -17,11 +22,14 @@ window.addEventListener('mousemove', function(event) {
     mouse.y = event.y;
 });
 
+
 ctx.fillStyle = 'white';
-ctx.font = '25px Verdana';
-ctx.fillText('Grant Gonzalez', 17, 20);
+ctx.font = font_size + 'px Verdana';
+console.log(xpos1, xpos2);
+console.log(ypos1, ypos2);
+ctx.fillText('Grant Gonzalez', xpos1, ypos1);
 const text_coordinates = ctx.getImageData(0, 0, window.innerWidth, 100);
-ctx.fillText('CS Student', 42, 45)
+ctx.fillText('CS Student', xpos2, ypos2)
 const text_coordinates2 = ctx.getImageData(0, 0, window.innerWidth, 100);
 
 class Particle {
