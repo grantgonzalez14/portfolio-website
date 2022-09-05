@@ -1,16 +1,15 @@
 const canvas = document.getElementById('canvas1');
 const ctx = canvas.getContext('2d');
 canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
+canvas.height = window.innerHeight / 1.75;
 let particle_array = [];
-let adjust_x = 10;
 let adjust_y = 10;
 
 // Handle mouse
 const mouse = {
     x: null,
     y: null,
-    radius: 350
+    radius: 250
 };
 
 window.addEventListener('mousemove', function(event) {
@@ -19,9 +18,11 @@ window.addEventListener('mousemove', function(event) {
 });
 
 ctx.fillStyle = 'white';
-ctx.font = '30px Verdana';
-ctx.fillText('Grant', 0, 30);
-const text_coordinates = ctx.getImageData(0, 0, 100, 100);
+ctx.font = '25px Verdana';
+ctx.fillText('Grant Gonzalez', 17, 20);
+const text_coordinates = ctx.getImageData(0, 0, window.innerWidth, 100);
+ctx.fillText('CS Student', 42, 45)
+const text_coordinates2 = ctx.getImageData(0, 0, window.innerWidth, 100);
 
 class Particle {
     constructor(x, y) {
@@ -76,7 +77,17 @@ function init() {
     for (let y = 0, y2 = text_coordinates.height; y < y2; y++) {
         for (let x = 0, x2 = text_coordinates.width; x < x2; x++) {
             if (text_coordinates.data[(y * 4 * text_coordinates.width) + (x * 4) + 3] > 128) {
-                let position_x = x + adjust_x;
+                let position_x = x;
+                let position_y = y + adjust_y;
+                particle_array.push(new Particle(position_x * 10, position_y * 10));
+            }
+        }
+    }
+
+    for (let y = 0, y2 = text_coordinates2.height; y < y2; y++) {
+        for (let x = 0, x2 = text_coordinates2.width; x < x2; x++) {
+            if (text_coordinates2.data[(y * 4 * text_coordinates2.width) + (x * 4) + 3] > 128) {
+                let position_x = x;
                 let position_y = y + adjust_y;
                 particle_array.push(new Particle(position_x * 10, position_y * 10));
             }
@@ -111,7 +122,7 @@ function animate() {
         particle_array[i].update();
     }
 
-    connect();
+    //connect();
     requestAnimationFrame(animate);
 }
 

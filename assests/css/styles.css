@@ -92,6 +92,18 @@ footer {
   background-color: black;
 }
 
+#particle-section-images {
+  background-color: black;
+}
+
+.particle-section-images img {
+  display: inline-block;
+  justify-content: center;
+  width: 160px;
+  height: 160px;
+  margin: 0 140px 100px;
+}
+
 .burger-menu {
   color: var(--primary-text-color);
   font-size: 2rem;
