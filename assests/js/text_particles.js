@@ -102,25 +102,6 @@ function init() {
     }
 }
 
-function connect() {
-    for (let i = 0; i < particle_array.length; i++) {
-        for (let j = i; j < particle_array.length; j++) {
-            let dx = particle_array[i].x - particle_array[j].x;
-            let dy = particle_array[i].y - particle_array[j].y;
-            let distance = Math.sqrt(dx*dx + dy*dy);
-
-            if (distance < 15) {
-                ctx.strokeStyle = 'white';
-                ctx.lineWidth = 2;
-                ctx.beginPath();
-                ctx.moveTo(particle_array[i].x, particle_array[i].y);
-                ctx.lineTo(particle_array[j].x, particle_array[j].y);
-                ctx.stroke();
-            }
-        }
-    }
-}
-
 function animate() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
@@ -129,7 +110,6 @@ function animate() {
         particle_array[i].update();
     }
 
-    //connect();
     requestAnimationFrame(animate);
 }
 
