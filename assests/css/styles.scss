@@ -12,6 +12,7 @@
   --bottom-margin-2: 1rem;
   --line-height: 1.7rem;
   --transition: 0.3s;
+  --linkedin-color: #0072b1;
 }
 
 html {
@@ -145,6 +146,7 @@ footer {
 
 .socials ul li a {
   text-align: right;
+  display: flex;
   height: 100%;
   width: 100%;
   padding: 15px 20px;
@@ -158,11 +160,15 @@ footer {
 }
 
 .linkedin {
-  background-color: #0072b1;
+  background-color: var(--linkedin-color);
 }
 
 .github {
   background-color: gray;
+}
+
+.email {
+  background-color: black;
 }
 
 .socials-text {
@@ -171,12 +177,11 @@ footer {
   width: 100%;
 }
 
-.github .socials-text img {
+.socials-img {
   margin-left: 10%;
-}
-
-.linkedin .socials-text img {
-  margin-left: 10%;
+  width: 40px;
+  height: 40px;
+  opacity: 1;
 }
 
 .about {
