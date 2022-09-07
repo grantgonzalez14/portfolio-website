@@ -27,6 +27,7 @@ ctx.fillStyle = 'white';
 ctx.font = font_size + 'px Verdana';
 ctx.fillText('Grant Gonzalez', xpos1, ypos1);
 const text_coordinates = ctx.getImageData(0, 0, window.innerWidth, 100);
+//ctx.font = font_size - 10 + 'px Verdana';
 ctx.fillText('CS Student', xpos2, ypos2)
 const text_coordinates2 = ctx.getImageData(0, 0, window.innerWidth, 100);
 
