@@ -205,11 +205,13 @@ footer {
   border-radius: 5px;
   box-shadow: 0 3px 10px var(--primary-shadow);
   justify-content: center;
+  flex-direction: column;
 }
 
 .about-container div {
   display: flex;
   justify-content: left;
+  width: 100%;
 }
 
 .about-container .bio {
