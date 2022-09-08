@@ -326,6 +326,7 @@ a:hover .socials-img {
 
 .projects-container {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -336,13 +337,10 @@ a:hover .socials-img {
 }
 
 .project-container {
+  display: flex;
   text-align: center;
-  width: 21.875rem;
+  width: 80%;
   padding: 1rem;
-}
-
-.project-container p {
-  padding: 0.4rem;
 }
 
 .project-title,
@@ -356,6 +354,15 @@ a:hover .socials-img {
   box-shadow: 0 3px 10px var(--primary-shadow);
   padding: 20px;
   margin: 10px;
+}
+
+.project-container .project-left {
+  width: 50%;
+}
+
+.project-container .project-right {
+  width: 50%;
+  text-align: left;
 }
 
 .project-card .project-link {
