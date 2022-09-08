@@ -128,7 +128,6 @@ footer {
   margin-inline-start: 0;
   margin-inline-end: 0;
   padding-inline-start: 0;
-  transition: width 600ms ease;
 }
 
 .socials ul li {
@@ -141,6 +140,7 @@ footer {
 }
 
 .socials ul li:hover {
+  transition: 0.3s;
   width: 100%;
 }
 
@@ -150,13 +150,17 @@ footer {
   height: 100%;
   width: 100%;
   padding: 15px 20px;
-  opacity: 0;
 }
 
-.socials ul li a:hover {
+.linkedin .linkedin-link:hover,
+.github .github-link {
   transition: 0.3s;
-  opacity: 1;
   color: var(--primary-text-color);
+}
+
+.email .email-link:hover {
+  transition: 0.3s;
+  color: black;
 }
 
 .linkedin {
@@ -164,24 +168,39 @@ footer {
 }
 
 .github {
-  background-color: gray;
+  background-color: black;
 }
 
 .email {
-  background-color: black;
+  background-color: white;
 }
 
 .socials-text {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  text-align: left;
+  opacity: 0;
   width: 100%;
+  transition: 0.3s;
+}
+
+a:hover .socials-text {
+  opacity: 1;
+  justify-content: center;
+  transition: 0.5s;
 }
 
 .socials-img {
-  margin-left: 10%;
+  margin-left: -120%;
   width: 40px;
   height: 40px;
-  opacity: 1;
+  transition: 0.3s;
+}
+
+a:hover .socials-img {
+  transition: 0.3s;
+  margin-left: 5%;
 }
 
 .about {
