@@ -338,7 +338,7 @@ a:hover .socials-img {
 .project-container {
   display: flex;
   text-align: center;
-  width: 80%;
+  width: 70%;
   padding: 1rem;
 }
 
@@ -360,8 +360,21 @@ a:hover .socials-img {
 }
 
 .project-container .project-right {
-  width: 50%;
   text-align: left;
+  width: 50%;
+}
+
+.project-container .project-right p {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.project-container .project-right img {
+  width: 32px;
+  height: 32px;
+  margin-left: 10px;
 }
 
 .project-card .project-link {
