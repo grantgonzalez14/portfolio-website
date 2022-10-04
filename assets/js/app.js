@@ -54,7 +54,7 @@ navLink.forEach((link) => {
                break;
 
            case "contact":
-               y = contact_rect.y;
+               y = document.body.scrollHeight;
                break;
        }
 
