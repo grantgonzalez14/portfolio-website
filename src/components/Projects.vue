@@ -35,7 +35,7 @@
           </p>
           <p>Description: You're lookin' at it!</p>
           <a href="/home">Check it out!</a>
-          <a href="https://github.com/grantgonzalez14/portfolio-website">Source Code</a>
+          <a href="https://github.com/grantgonzalez14/portfolio-website" target="_blank">Source Code</a>
         </div>
       </div>
       <div class="project-container project-card" data-aos="fade-right" data-aos-duration="1000">
