@@ -23,16 +23,19 @@
       </div>
       <div class="project-container project-card" data-aos="fade-left" data-aos-duration="1000">
         <div class="project-left">
-          <img src="../assets/images/coming_soon.jpeg" alt="Portfolio Website (Coming Soon!)" loading="lazy" class="project-pic"/>
+          <img src="../assets/images/portfolio-website.png" alt="Portfolio Website" loading="lazy" class="project-pic"/>
         </div>
         <div class="project-right">
           <h3 class="project-title">Portfolio Website</h3>
           <p>Made with:
+            <img src="../assets/icons/icons8-vue-js-48.png" alt="Vue JS" loading="lazy">
             <img src="../assets/icons/icons8-javascript.svg" alt="Javascript" loading="lazy">
-            <img src="../assets/icons/icons8-sass-48.png" alt="SCSS" loading="lazy">
-            <img src="../assets/icons/icons8-html-5.svg" alt="HTML" loading="lazy">
+            <img src="../assets/icons/icons8-css3.svg" alt="CSS3" loading="lazy">
+            <img src="../assets/icons/icons8-html-5.svg" alt="HTML5" loading="lazy">
           </p>
-          <p>Description ...</p>
+          <p>Description: You're lookin' at it!</p>
+          <a href="/home">Check it out!</a>
+          <a href="https://github.com/grantgonzalez14/portfolio-website">Source Code</a>
         </div>
       </div>
       <div class="project-container project-card" data-aos="fade-right" data-aos-duration="1000">
@@ -69,8 +72,7 @@
 <style scoped>
   .projects {
     background-color: #14110F;
-    padding: 32px 0;
-    margin-top: 2rem;
+    padding: 10px 0;
   }
 
   .project-pic {
@@ -113,11 +115,25 @@
 
   .project-container .project-left {
     width: 50%;
+    height: 100%;
   }
 
   .project-container .project-right {
     text-align: left;
     width: 50%;
+  }
+
+  .project-container .project-right a {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 11%;
+    margin-top: 3%;
+    color: #14110F;
+  }
+
+  .project-container .project-right a:hover {
+    color: #7E7F83;
   }
 
   .project-container .project-right p {
@@ -135,9 +151,5 @@
 
   .project-card .project-link {
     color: #F3F3F4;
-  }
-
-  .project-card .project-link a:hover {
-    color: #D9C5B2;
   }
 </style>
