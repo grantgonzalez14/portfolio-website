@@ -127,4 +127,14 @@
     height: 160px;
     margin: 0 4% 10%;
   }
+
+  @media screen and (max-width: 812px) {
+      #canvas {
+          visibility: hidden;
+          width: 0;
+          height: 0;
+      }
+  }
+
+
 </style>
