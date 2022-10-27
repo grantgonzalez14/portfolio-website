@@ -1,6 +1,6 @@
 <template>
     <nav-bar></nav-bar>
-    <social-media v-if="innerWidth"> 450"></social-media>
+    <social-media v-if="innerWidth > 375"></social-media>
     <section class="about">
         <div class="about-container" data-aos="fade-up" data-aos-duration="1000">
             <h1 v-if="innerWidth > 375" class="about-header">About Me</h1>
@@ -125,7 +125,7 @@
         margin-left: 1rem;
     }
 
-  @media screen and (max-width: 812px) {
+  @media screen and (max-width: 925px) {
       .about {
           max-width: 100%;
           height: 100vh;
@@ -165,10 +165,10 @@
       }
   }
 
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: 425px) {
         .about {
             max-width: 100%;
-            height: 100vh;
+            height: 95vh;
         }
 
         .about-container {
@@ -179,6 +179,7 @@
         .about-header {
             height: 15%;
             margin-bottom: 2rem;
+            overflow-y: hidden;
         }
 
         .bio {

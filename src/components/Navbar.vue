@@ -72,7 +72,7 @@
         height: 0;
     }
 
-    @media screen and (max-width: 812px) {
+    @media screen and (max-width: 925px) {
         /* Large Tablets */
         * {
             margin: 0;
@@ -191,7 +191,7 @@
         }
     }
 
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: 425px) {
         .hamburger {
             display: block;
             top: 5vh;
