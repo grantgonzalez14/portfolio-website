@@ -24,6 +24,8 @@
                 <li><a href="/skills">Skills</a></li>
                 <li><a href="/projects">Projects</a></li>
                 <li><a href="/contact">Contact</a></li>
+                <li><a href="https://www.linkedin.com/in/grant-gonzalez-165117205/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://github.com/grantgonzalez14" target="_blank" class="github-link"></a>Github</li>
             </ul>
         </nav>
     </div>
@@ -66,6 +68,8 @@
 
     .burger-nav {
         visibility: hidden;
+        width: 0;
+        height: 0;
     }
 
     @media screen and (max-width: 812px) {
@@ -102,7 +106,7 @@
             position: fixed;
             visibility: visible;
             right: -100vw;
-            width: 225px;
+            width: 0;
             height: 100%;
             background-color: #7E7F83;
             transition: 0.7s;
@@ -151,7 +155,10 @@
 
         .burger-nav.active {
             right: 0;
+            width: 225px;
+            height: 100%;
             transition: 0.5s ease-out;
+            z-index: 1;
         }
 
         .hamburger.open #bar1 {

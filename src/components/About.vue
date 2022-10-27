@@ -1,9 +1,10 @@
 <template>
     <nav-bar></nav-bar>
-    <social-media></social-media>
+    <social-media v-if="innerWidth"> 450"></social-media>
     <section class="about">
         <div class="about-container" data-aos="fade-up" data-aos-duration="1000">
-            <h1 class="about-header">About Me</h1>
+            <h1 v-if="innerWidth > 375" class="about-header">About Me</h1>
+            <h3 v-else class="about-header">About Me</h3>
             <div class="bio">
                 <div class="bio-header">
                   <h2>Bio</h2>
@@ -12,7 +13,7 @@
             </div>
             <br><br>
             <div class="previous-experience">
-                <div class="experience-header">
+                <div class="experience-header" v-if="innerWidth > 375">
                   <h2>Experience</h2>
                 </div>
                 <div class="qualtrics">
@@ -126,8 +127,8 @@
 
   @media screen and (max-width: 812px) {
       .about {
-          max-width: 30rem;
-          margin: 1rem 7rem;
+          max-width: 100%;
+          height: 100vh;
       }
 
       .about-container {
@@ -137,14 +138,77 @@
       }
 
       .about-header {
-          margin: 0;
+          height: 16%;
+          overflow-y: auto;
+          overflow-x: auto;
+      }
+
+      .bio {
+          height: 10%;
+          text-align: center;
+          margin: 0 8%;
+      }
+
+      .about-container .bio .bio-header {
+          height: 0;
+          width: 0;
+          visibility: hidden;
+      }
+
+      .about-container .previous-experience .experience-header {
+          width: auto;
+      }
+
+      .about-header, .previous-experience, .experience-header {
+          overflow-y: auto;
+          overflow-x: auto;
       }
   }
 
-  @media screen and (max-width: 375px) {
-    .about {
-        max-width: 22rem;
-        margin: 0;
+    @media screen and (max-width: 375px) {
+        .about {
+            max-width: 100%;
+            height: 100vh;
+        }
+
+        .about-container {
+            max-width: 15rem;
+            margin: 0;
+        }
+
+        .about-header {
+            height: 15%;
+            margin-bottom: 2rem;
+        }
+
+        .bio {
+            height: 10%;
+            text-align: center;
+            margin: 0 8%;
+        }
+
+        .about-container .bio .bio-header {
+            height: 0;
+            width: 0;
+            visibility: hidden;
+        }
+
+        .about-container .previous-experience .experience-header {
+            width: auto;
+        }
+
+        .previous-experience, .experience-header {
+            overflow-y: auto;
+            overflow-x: auto;
+        }
+
+        .about-container .previous-experience .qualtrics p {
+            margin-left: 2rem;
+        }
+
+        .about-container .previous-experience .qualtrics ul {
+            margin-left: 0;
+            margin-top: 0;
+        }
     }
-  }
 </style>
