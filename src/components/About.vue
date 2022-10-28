@@ -1,9 +1,9 @@
 <template>
     <nav-bar></nav-bar>
-    <social-media v-if="innerWidth > 375"></social-media>
+    <social-media v-if="innerWidth > 425"></social-media>
     <section class="about">
         <div class="about-container" data-aos="fade-up" data-aos-duration="1000">
-            <h1 v-if="innerWidth > 375" class="about-header">About Me</h1>
+            <h1 v-if="innerWidth > 425" class="about-header">About Me</h1>
             <h3 v-else class="about-header">About Me</h3>
             <div class="bio">
                 <div class="bio-header">
@@ -13,7 +13,7 @@
             </div>
             <br><br>
             <div class="previous-experience">
-                <div class="experience-header" v-if="innerWidth > 375">
+                <div class="experience-header" v-if="innerWidth > 425">
                   <h2>Experience</h2>
                 </div>
                 <div class="qualtrics">
