@@ -36,10 +36,6 @@
         mouse: null
       }
     },
-    
-    mounted() {
-      this.window_width = window.innerWidth;
-    },
 
     methods: {
       init() {
@@ -82,6 +78,7 @@
       }
     },
     mounted: function () {
+      this.window_width = window.innerWidth;
       this.canvas = document.getElementById('canvas');
       this.ctx = this.canvas.getContext('2d');
       this.canvas.width = window.innerWidth;
