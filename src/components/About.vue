@@ -1,6 +1,6 @@
 <template>
     <nav-bar></nav-bar>
-    <social-media v-if="innerWidth > 425"></social-media>
+    <social-media v-if="window_width > 925"></social-media>
     <section class="about">
         <div class="about-container" data-aos="fade-up" data-aos-duration="1000">
             <h1 v-if="innerWidth > 425" class="about-header">About Me</h1>
