@@ -39,7 +39,7 @@
     
     mounted() {
       this.window_width = window.innerWidth;
-    }
+    },
 
     methods: {
       init() {
