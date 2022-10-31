@@ -135,6 +135,7 @@
             transform: translateY(-50%);
             border: 0;
             background: 0 0;
+            z-index: 1;
         }
 
         .bar {
@@ -143,6 +144,7 @@
             width: 100%;
             height: 4px;
             transition: all 0.3s ease-in;
+            z-index: 1;
         }
 
         #bar2 {

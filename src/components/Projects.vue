@@ -90,6 +90,7 @@
         padding: 10px 0;
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
 
     .project-pic {
@@ -109,6 +110,7 @@
         text-align: center;
         margin-bottom: 1rem;
         color: #7E7F83;
+        width: 50%;
     }
 
     .project-container {
