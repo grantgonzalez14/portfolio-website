@@ -1,6 +1,6 @@
 <template>
   <nav-bar></nav-bar>
-  <social-media></social-media>
+  <social-media v-if="window_width > 925"></social-media>
   <canvas id="canvas"></canvas>
   <div class="images">
     <img src="../assets/icons/icons8-active-directory-80.png" alt="Active Directory" loading="lazy" class="ps-img">
