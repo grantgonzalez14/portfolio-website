@@ -21,6 +21,7 @@
 
     data() {
       return {
+        window_width: null,
         canvas: null,
         ctx: null,
         particle_array: null,
@@ -35,6 +36,10 @@
         mouse: null
       }
     },
+    
+    mounted() {
+      this.window_width = window.innerWidth;
+    }
 
     methods: {
       init() {
