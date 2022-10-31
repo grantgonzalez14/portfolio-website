@@ -51,6 +51,15 @@
 
     export default {
         name: "about-me",
+        
+        data() {
+            window_width: null,
+        },
+        
+        mounted() {
+            this.window_width = window.innerWidth;
+        },
+        
         components: {SocialMedia, NavBar}
     }
 </script>
