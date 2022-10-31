@@ -53,7 +53,9 @@
         name: "about-me",
         
         data() {
-            window_width: null,
+            return {
+                window_width: null
+            }
         },
         
         mounted() {
