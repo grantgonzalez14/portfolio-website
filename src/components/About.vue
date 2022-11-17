@@ -11,8 +11,11 @@
                     Chair in the past. I'm currently looking to start my career as a software engineer!</p>
             </div>
             <br><br>
+            <div class="experience-header" v-if="window_width <= 925" :key="rerender">
+                <h2>Experience</h2>
+            </div>
             <div class="previous-experience">
-                <div class="experience-header" v-if="window_width > 425" :key="rerender">
+                <div class="experience-header" v-if="window_width > 925" :key="rerender">
                   <h2>Experience</h2>
                 </div>
                 <div class="qualtrics">
@@ -37,10 +40,11 @@
                 </div>
             </div>
             <div class="personality-container">
-                <div class="personality-header">
+                <div class="personality-header" v-if="window_width > 925">
                     <h2>Personality</h2>
                 </div>
                 <div class="personality">
+                    <h2 v-if="window_width <= 925">Personality</h2>
                     <p>In 2021 I got the opportunity to take a personality assessment describing who I am as a person
                         and the tendencies I have. Below is the 25 page report, so if you're curious to know what kind
                         of person I am you should give it a read!</p>
@@ -204,12 +208,9 @@
           margin: 0 8%;
       }
 
-      .about-container .previous-experience .experience-header {
-          width: auto;
-      }
-
-      .about-header, .previous-experience, .experience-header {
-
+      .about-container .experience-header {
+          width: 100%;
+          justify-content: center;
       }
   }
 
