@@ -95,6 +95,7 @@
         width: 100%;
         text-align: center;
         color: #14110F;
+        font-family: "Montserrat", "serif";
     }
 
     .about-container {
@@ -116,13 +117,16 @@
     }
 
     .about-container .bio .bio-header, .about-container .previous-experience .experience-header {
-        width: 20%;
+        width: 5%;
+        margin-left: 3%;
     }
 
     .about-container .bio {
         justify-content: left;
         place-items: center;
+        font-family: "Montserrat", "serif";
     }
+
 
     .about-container .previous-experience {
         justify-content: left;
@@ -144,10 +148,13 @@
 
     .about-container .previous-experience .qualtrics p, .about-container .previous-experience .eleos p {
         margin-left: 3rem;
+        font-family: "Montserrat", "serif";
     }
 
     .about-container .previous-experience .qualtrics ul, .about-container .previous-experience .eleos ul {
         margin-left: 1rem;
+        font-family: "Montserrat","serif";
+        font-size: 14px;
     }
 
   @media screen and (max-width: 925px) {
@@ -203,7 +210,7 @@
 
         .about-header {
             height: 15%;
-            margin-bottom: 2rem;
+            margin-bottom: 3rem;
             overflow-y: hidden;
         }
 
@@ -234,7 +241,6 @@
 
         .about-container .previous-experience .qualtrics ul {
             margin-left: 0;
-            margin-top: 0;
         }
     }
 </style>

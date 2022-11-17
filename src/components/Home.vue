@@ -66,6 +66,7 @@
 
     h1 {
         color: #7E7F83;
+        font-family: "Montserrat", "serif";
     }
 
     .images {

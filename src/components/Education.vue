@@ -22,12 +22,12 @@
                     </div>
                 </div>
                 <div class="education-info">
-                    <h3>School: Clemson University</h3>
-                    <h3>Graduating: May 2023</h3>
-                    <h3>GPA: 3.45</h3>
-                    <h3>Major: Computer Science</h3>
-                    <h3>President's List: Spring 2022</h3>
-                    <h3>Dean's List: Fall 2021</h3>
+                    <h3>School:<p>&nbsp;Clemson University</p></h3>
+                    <h3>Graduating:<p>&nbsp;May 2023</p></h3>
+                    <h3>GPA:<p>&nbsp;3.45</p></h3>
+                    <h3>Major:<p>&nbsp;Computer Science</p></h3>
+                    <h3>President's List:<p>&nbsp;Spring 2022</p></h3>
+                    <h3>Dean's List:<p>&nbsp;Fall 2021</p></h3>
                 </div>
             </div>
         </div>
@@ -127,8 +127,15 @@
 
     .education-info h3 {
         display: flex;
+        flex-direction: row;
         margin-bottom: 1rem;
         justify-content: left;
+    }
+
+    .education-info h3 p {
+        margin-bottom: 0;
+        margin-top: 0;
+        font-family: "Montserrat", "serif";
     }
 
     @media screen and (max-width: 925px) {
