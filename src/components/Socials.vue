@@ -33,6 +33,7 @@
     .socials {
         position: fixed;
         bottom: 40%;
+        z-index: 1;
     }
 
     .socials ul {

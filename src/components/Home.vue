@@ -1,19 +1,30 @@
 <template>
     <nav-bar></nav-bar>
     <social-media v-if="window_width > 925" :key="rerender"></social-media>
-    <div class="pictures">
-        <img src="../assets/images/GRingCeremony.jpeg" alt="Grant Ring Ceremony" loading="lazy" class="g-img up">
-        <img src="../assets/images/GnBSikes.jpg" alt="Grant Ring Ceremony" loading="lazy" class="g-img down">
-        <img src="../assets/images/GRatLJ.jpeg" alt="Grant Ring Ceremony" loading="lazy" class="g-img up double">
-        <img src="../assets/images/GatSeattleLake.jpeg" alt="Grant Ring Ceremony" loading="lazy" class="g-img down">
-        <img src="../assets/images/GatQ.jpeg" alt="Grant Ring Ceremony" loading="lazy" class="g-img up">
+    <div class="pictures" v-if="window_width > 425" :key="rerender">
+        <img src="../assets/images/GRingCeremony.jpeg" alt="Grant Ring Ceremony" loading="lazy" data-aos="fade-up" data-aos-duration="1000" class="g-img up">
+        <img src="../assets/images/GnBSikes.jpg" alt="Grant Ring Ceremony" loading="lazy" data-aos="fade-down" data-aos-duration="1000" class="g-img down">
+        <img src="../assets/images/GRatDV.jpeg" alt="Grant Ring Ceremony" loading="lazy" data-aos="fade-up" data-aos-duration="1000" class="g-img up double">
+        <img src="../assets/images/GatSeattleLake.jpeg" alt="Grant Ring Ceremony" loading="lazy" data-aos="fade-down" data-aos-duration="1000" class="g-img down">
+        <img src="../assets/images/GatQ.jpeg" alt="Grant Ring Ceremony" loading="lazy" data-aos="fade-up" data-aos-duration="1000" class="g-img up">
     </div>
-    <div class="images">
-        <img src="../assets/icons/icons8-active-directory-80.png" alt="Active Directory" loading="lazy" class="ps-img">
-        <img src="../assets/icons/icons8-code-80.png" alt="Code Image" loading="lazy" class="ps-img">
-        <img src="../assets/icons/icons8-code-fork-80.png" alt="Code Fork Image" loading="lazy" class="ps-img">
-        <img src="../assets/icons/icons8-module-80.png" alt="Module Image" loading="lazy" class="ps-img">
-        <img src="../assets/icons/icons8-web-design-80.png" alt="Web Design Image" loading="lazy" class="ps-img">
+    <div class="bio" data-aos="zoom-in" data-aos-duration="1000">
+        <h1>Grant Gonzalez</h1>
+        <h1>CS Student</h1>
+    </div>
+    <div class="pictures" v-if="window_width <= 425" :key="rerender">
+        <img src="../assets/images/GRingCeremony.jpeg" alt="Grant Ring Ceremony" loading="lazy" data-aos="fade-up-left" data-aos-duration="1000" class="g-img right">
+        <img src="../assets/images/GnBSikes.jpg" alt="Grant Ring Ceremony" loading="lazy" data-aos="fade-up-right" data-aos-duration="1000" class="g-img left">
+        <img src="../assets/images/GRatDV.jpeg" alt="Grant Ring Ceremony" loading="lazy" data-aos="fade-up-left" data-aos-duration="1000" class="g-img up right">
+        <img src="../assets/images/GatSeattleLake.jpeg" alt="Grant Ring Ceremony" loading="lazy" data-aos="fade-up-right" data-aos-duration="1000" class="g-img left">
+        <img src="../assets/images/GatQ.jpeg" alt="Grant Ring Ceremony" loading="lazy" data-aos="fade-up-left" data-aos-duration="1000" class="g-img right">
+    </div>
+    <div class="images" v-if="window_width > 425" :key="rerender">
+        <img src="../assets/icons/icons8-active-directory-80.png" alt="Active Directory" loading="lazy" data-aos="fade-right" data-aos-duration="1000" class="ps-img">
+        <img src="../assets/icons/icons8-code-80.png" alt="Code Image" loading="lazy" data-aos="fade-up" data-aos-duration="1000" class="ps-img">
+        <img src="../assets/icons/icons8-code-fork-80.png" alt="Code Fork Image" loading="lazy" data-aos="fade-down" data-aos-duration="1000" class="ps-img">
+        <img src="../assets/icons/icons8-module-80.png" alt="Module Image" loading="lazy" data-aos="fade-up" data-aos-duration="1000" class="ps-img">
+        <img src="../assets/icons/icons8-web-design-80.png" alt="Web Design Image" loading="lazy" data-aos="fade-left" data-aos-duration="1000" class="ps-img">
     </div>
 </template>
 
@@ -38,7 +49,7 @@
                 let prev_size = this.window_width;
                 this.window_width = window.innerWidth;
 
-                if ((prev_size >= 925 && this.window_width < 925) || (prev_size < 925 && this.window_width >= 925)) this.rerender += 1;
+                if ((prev_size >= 925 && this.window_width < 925) || (prev_size < 925 && this.window_width >= 925) || (prev_size >= 425 && this.window_width < 425) || (prev_size < 425 && this.window_width >= 425)) this.rerender += 1;
             });
         },
 
@@ -47,53 +58,80 @@
 </script>
 
 <style scoped>
-  .images {
-    background-color: #14110F;
-    text-align: center;
-  }
+    .bio {
+        display: block;
+        text-align: center;
+        margin-bottom: 4%;
+    }
 
-  .images .ps-img {
-    display: inline-block;
-    justify-content: center;
-    width: 160px;
-    height: 160px;
-    margin: 0 4% 10%;
-  }
+    h1 {
+        color: #7E7F83;
+    }
 
-  .pictures {
-      background-color: #14110F;
-      text-align: center;
-  }
+    .images {
+        background-color: #14110F;
+        text-align: center;
+    }
 
-  .pictures .g-img {
-      display: inline-block;
-      justify-content: center;
-      width: 12%;
-      height: 12%;
-      margin: 2% 4% 10%;
-  }
+    .images .ps-img {
+        display: inline-block;
+        justify-content: center;
+        width: 160px;
+        height: 160px;
+        margin: 0 4% 10%;
+    }
 
-  .up {
-      padding-bottom: 5%;
-  }
+    .pictures {
+        display: flex;
+        flex-direction: row;
+        background-color: #14110F;
+        text-align: center;
+        align-items: center;
+    }
 
-  .down {
-      padding-top: 5%;
-  }
+    .pictures .g-img {
+        display: inline-block;
+        justify-content: center;
+        width: 12%;
+        height: 12%;
+        margin: 2% 4% 0 4%;
+    }
 
-  .double {
-      padding-bottom: 10%;
-  }
+    .up {
+        padding-bottom: 5%;
+    }
 
+    .down {
+        padding-top: 5%;
+    }
 
+    .double {
+        padding-bottom: 10%;
+    }
 
-  @media screen and (max-width: 812px) {
-      #canvas {
-          visibility: hidden;
-          width: 0;
-          height: 0;
-      }
-  }
+    @media screen and (max-width: 425px) {
+        .pictures {
+            display: flex;
+            flex-direction: column;
+            background-color: #14110F;
+            text-align: center;
+            align-items: center;
+        }
 
+        .pictures .g-img {
+            display: inline-block;
+            justify-content: center;
+            width: 50%;
+            height: 50%;
+            margin: 2% 4% 3% 4%;
+        }
 
+        .left {
+            padding-right: 20%;
+        }
+
+        .right {
+            padding-left: 20%;
+        }
+    }
 </style>

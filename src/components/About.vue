@@ -1,9 +1,9 @@
 <template>
     <nav-bar></nav-bar>
-    <social-media v-if="window_width > 925"></social-media>
+    <social-media v-if="window_width > 925" :key="rerender"></social-media>
     <section class="about">
         <div class="about-container" data-aos="fade-up" data-aos-duration="1000">
-            <h1 v-if="innerWidth > 425" class="about-header">About Me</h1>
+            <h1 v-if="innerWidth > 425" :key="rerender" class="about-header">About Me</h1>
             <h3 v-else class="about-header">About Me</h3>
             <div class="bio">
                 <div class="bio-header">
@@ -13,7 +13,7 @@
             </div>
             <br><br>
             <div class="previous-experience">
-                <div class="experience-header" v-if="innerWidth > 425">
+                <div class="experience-header" v-if="innerWidth > 425" :key="rerender">
                   <h2>Experience</h2>
                 </div>
                 <div class="qualtrics">
@@ -26,7 +26,7 @@
                     </ul>
                 </div>
                 <div class="eleos">
-                    <p><i><strong>Eleos - Software QA Analyst</strong></i></p><br>
+                    <p><i><strong>Eleos Technologies - Software QA Analyst</strong></i></p><br>
                     <ul style="list-style-type:disc">
                         <li>Tests functionality, performance and compliance of each product against design specifications to maintain strong
                           development standards and high customer satisfaction.</li><br>
@@ -38,6 +38,12 @@
                 </div>
             </div>
         </div>
+        <!--
+        <div class="about-container">
+            <h1 v-if="innerWidth > 425" :key="rerender" class="about-header">Pictures!</h1>
+            <h3 v-else class="about-header">Pictures!</h3>
+        </div>
+        -->
     </section>
 </template>
 
@@ -54,12 +60,20 @@
         
         data() {
             return {
-                window_width: null
+                window_width: null,
+                rerender: 0
             }
         },
         
         mounted() {
             this.window_width = window.innerWidth;
+
+            window.addEventListener('resize', () => {
+                let prev_size = this.window_width;
+                this.window_width = window.innerWidth;
+
+                if ((prev_size >= 925 && this.window_width < 925) || (prev_size < 925 && this.window_width >= 925) || (prev_size >= 425 && this.window_width < 425) || (prev_size < 425 && this.window_width >= 425)) this.rerender += 1;
+            });
         },
         
         components: {SocialMedia, NavBar}
@@ -88,7 +102,7 @@
         background-color: white;
         max-width: 100rem;
         height: 30rem;
-        margin: 0 auto;
+        margin: 1% auto;
         padding: 0.938rem;
         border-radius: 5px;
         box-shadow: 0 3px 10px azure;

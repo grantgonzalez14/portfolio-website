@@ -75,6 +75,7 @@
         visibility: hidden;
         width: 0;
         height: 0;
+        z-index: 1;
     }
 
     @media screen and (max-width: 925px) {
