@@ -1,9 +1,9 @@
 <template>
     <nav-bar></nav-bar>
-    <social-media v-if="window_width > 925"></social-media>
+    <social-media v-if="window_width > 925" :key="rerender"></social-media>
     <section class="skills" id="skills">
         <h1 class="skill-header" data-aos="fade-down" data-aos-duration="1000">My Skills</h1>
-        <div class="skills-wrapper-large" v-if="window_width > 925">
+        <div class="skills-wrapper-large" v-if="window_width > 925" :key="rerender">
             <div>
                 <img
                     src="../assets/icons/icons8-html-5.svg"
@@ -229,12 +229,20 @@
 
         data() {
             return {
-                window_width: null
+                window_width: null,
+                rerender: 0
             }
         },
 
         mounted() {
             this.window_width = window.innerWidth;
+
+            window.addEventListener('resize', () => {
+                let prev_size = this.window_width;
+                this.window_width = window.innerWidth;
+
+                if ((prev_size >= 925 && this.window_width < 925) || (prev_size < 925 && this.window_width >= 925)) this.rerender += 1;
+            });
         },
 
         components: {SocialMedia, NavBar}

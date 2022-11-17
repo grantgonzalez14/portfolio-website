@@ -1,119 +1,49 @@
 <template>
-  <nav-bar></nav-bar>
-  <social-media v-if="window_width > 925"></social-media>
-  <canvas id="canvas"></canvas>
-  <div class="images">
-    <img src="../assets/icons/icons8-active-directory-80.png" alt="Active Directory" loading="lazy" class="ps-img">
-    <img src="../assets/icons/icons8-code-80.png" alt="Code Image" loading="lazy" class="ps-img">
-    <img src="../assets/icons/icons8-code-fork-80.png" alt="Code Fork Image" loading="lazy" class="ps-img">
-    <img src="../assets/icons/icons8-module-80.png" alt="Module Image" loading="lazy" class="ps-img">
-    <img src="../assets/icons/icons8-web-design-80.png" alt="Web Design Image" loading="lazy" class="ps-img">
-  </div>
+    <nav-bar></nav-bar>
+    <social-media v-if="window_width > 925" :key="rerender"></social-media>
+    <div class="pictures">
+        <img src="../assets/images/GRingCeremony.jpeg" alt="Grant Ring Ceremony" loading="lazy" class="g-img up">
+        <img src="../assets/images/GnBSikes.jpg" alt="Grant Ring Ceremony" loading="lazy" class="g-img down">
+        <img src="../assets/images/GRatLJ.jpeg" alt="Grant Ring Ceremony" loading="lazy" class="g-img up double">
+        <img src="../assets/images/GatSeattleLake.jpeg" alt="Grant Ring Ceremony" loading="lazy" class="g-img down">
+        <img src="../assets/images/GatQ.jpeg" alt="Grant Ring Ceremony" loading="lazy" class="g-img up">
+    </div>
+    <div class="images">
+        <img src="../assets/icons/icons8-active-directory-80.png" alt="Active Directory" loading="lazy" class="ps-img">
+        <img src="../assets/icons/icons8-code-80.png" alt="Code Image" loading="lazy" class="ps-img">
+        <img src="../assets/icons/icons8-code-fork-80.png" alt="Code Fork Image" loading="lazy" class="ps-img">
+        <img src="../assets/icons/icons8-module-80.png" alt="Module Image" loading="lazy" class="ps-img">
+        <img src="../assets/icons/icons8-web-design-80.png" alt="Web Design Image" loading="lazy" class="ps-img">
+    </div>
 </template>
 
 <script>
-  import NavBar from "@/components/Navbar";
-  import SocialMedia from "@/components/Socials";
-  import { Particle } from '@/assets/js/particle';
+    import NavBar from "@/components/Navbar";
+    import SocialMedia from "@/components/Socials";
 
-  export default {
-    name: "home-page",
+    export default {
+        name: "home-page",
 
-    data() {
-      return {
-        window_width: null,
-        canvas: null,
-        ctx: null,
-        particle_array: null,
-        adjust_y: null,
-        xpos1: null,
-        xpos2: null,
-        ypos1: null,
-        ypos2: null,
-        font_size: null,
-        text_coordinates: null,
-        text_coordinates2: null,
-        mouse: null
-      }
-    },
-
-    methods: {
-      init() {
-        for (let y = 0, y2 = this.text_coordinates.height; y < y2; y++) {
-          for (let x = 0, x2 = this.text_coordinates.width; x < x2; x++) {
-            if (this.text_coordinates.data[(y * 4 * this.text_coordinates.width) + (x * 4) + 3] > 128) {
-              let position_x = x;
-              let position_y = y + this.adjust_y;
-              this.particle_array.push(new Particle(position_x * 10, position_y * 10));
+        data() {
+            return {
+                window_width: null,
+                rerender: 0
             }
-          }
-        }
+        },
 
-        for (let y = 0, y2 = this.text_coordinates2.height; y < y2;  y++) {
-          for (let x = 0, x2 = this.text_coordinates2.width; x < x2; x++) {
-            if (this.text_coordinates2.data[(y * 4 * this.text_coordinates2.width) + (x * 4) + 3] > 128) {
-              let position_x = x;
-              let position_y = y + this.adjust_y;
-              this.particle_array.push(new Particle(position_x * 10, position_y * 10));
-            }
-          }
-        }
+        mounted() {
+            this.window_width = window.innerWidth;
 
-      },
+            window.addEventListener('resize', () => {
+                let prev_size = this.window_width;
+                this.window_width = window.innerWidth;
 
-      animate() {
-        this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
+                if ((prev_size >= 925 && this.window_width < 925) || (prev_size < 925 && this.window_width >= 925)) this.rerender += 1;
+            });
+        },
 
-        for (let i = 0; i < this.particle_array.length; i++) {
-          this.particle_array[i].draw(this.ctx);
-          this.particle_array[i].update(this.mouse);
-        }
-
-        requestAnimationFrame(this.animate);
-      },
-
-      main() {
-        this.init();
-        this.animate();
-      }
-    },
-    mounted: function () {
-      this.window_width = window.innerWidth;
-      this.canvas = document.getElementById('canvas');
-      this.ctx = this.canvas.getContext('2d');
-      this.canvas.width = window.innerWidth;
-      this.canvas.height = window.innerHeight / 1.5;
-      this.particle_array = [];
-      this.adjust_y = 10;
-      this.xpos1 = window.innerWidth * 0.008;
-      this.xpos2 = window.innerWidth * 0.02;
-      this.ypos1 = window.innerHeight * 0.02;
-      this.ypos2 = window.innerHeight * 0.04;
-      this.font_size = window.innerWidth / 90;
-      this.text_coordinates = null;
-      this.text_coordinates2 = null;
-      this.mouse = {
-        x: null,
-        y: null,
-        radius: 250
-      };
-
-      window.addEventListener('mousemove', (event) => {
-        this.mouse.x = event.x;
-        this.mouse.y = event.y;
-      });
-
-      this.ctx.fillStyle = 'white';
-      this.ctx.font = this.font_size + 'px Verdana';
-      this.ctx.fillText('Grant Gonzalez', this.xpos1, this.ypos1);
-      this.text_coordinates = this.ctx.getImageData(0, 0, window.innerWidth, 100);
-      this.ctx.fillText('CS Student', this.xpos2, this.ypos2);
-      this.text_coordinates2 = this.ctx.getImageData(0, 0, window.innerWidth, 100);
-
-      this.main();
-    },
-    components: {SocialMedia, NavBar}
-  }
+        components: {SocialMedia, NavBar}
+    }
 </script>
 
 <style scoped>
@@ -122,13 +52,40 @@
     text-align: center;
   }
 
-  .images img {
+  .images .ps-img {
     display: inline-block;
     justify-content: center;
     width: 160px;
     height: 160px;
     margin: 0 4% 10%;
   }
+
+  .pictures {
+      background-color: #14110F;
+      text-align: center;
+  }
+
+  .pictures .g-img {
+      display: inline-block;
+      justify-content: center;
+      width: 12%;
+      height: 12%;
+      margin: 2% 4% 10%;
+  }
+
+  .up {
+      padding-bottom: 5%;
+  }
+
+  .down {
+      padding-top: 5%;
+  }
+
+  .double {
+      padding-bottom: 10%;
+  }
+
+
 
   @media screen and (max-width: 812px) {
       #canvas {

@@ -1,6 +1,6 @@
 <template>
     <nav-bar></nav-bar>
-    <social-media v-if="window_width > 925"></social-media>
+    <social-media v-if="window_width > 925" :key="rerender"></social-media>
     <section class="projects" id="projects">
         <h1 class="projects-title" data-aos="flip-down" data-aos-duration="1000">My Projects</h1>
         <div class="projects-container">
@@ -72,12 +72,20 @@
 
         data() {
             return {
-                window_width: null
+                window_width: null,
+                rerender: 0
             }
         },
 
         mounted() {
             this.window_width = window.innerWidth;
+
+            window.addEventListener('resize', () => {
+                let prev_size = this.window_width;
+                this.window_width = window.innerWidth;
+
+                if ((prev_size >= 925 && this.window_width < 925) || (prev_size < 925 && this.window_width >= 925)) this.rerender += 1;
+            });
         },
 
         components: {SocialMedia, NavBar}

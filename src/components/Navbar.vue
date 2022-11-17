@@ -1,11 +1,11 @@
 <template>
     <div class="nav">
-        <a href="/home">Home</a>
-        <a href="/about">About</a>
-        <a href="/education">Education</a>
-        <a href="/skills">Skills</a>
-        <a href="/projects">Projects</a>
-        <a href="/contact">Contact</a>
+        <a class="btn" href="/home">Home</a>
+        <a class="btn" href="/about">About</a>
+        <a class="btn" href="/education">Education</a>
+        <a class="btn" href="/skills">Skills</a>
+        <a class="btn" href="/projects">Projects</a>
+        <a class="btn" href="/contact">Contact</a>
     </div>
 
 
@@ -59,11 +59,16 @@
         color: #F3F3F4;
         text-decoration: none;
         font-size: 17px;
+        transition: 0.2s ease-in;
     }
 
     .nav a:hover {
         background-color: #D9C5B2;
         color: #34312D;
+        box-shadow: 0 0 5px #D9C5B2,
+                    0 0 25px #D9C5B2,
+                    0 0 50px #D9C5B2,
+                    0 0 200px #D9C5B2;
     }
 
     .burger-nav {

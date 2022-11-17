@@ -1,11 +1,11 @@
 <template>
     <nav-bar></nav-bar>
-    <social-media v-if="window_width > 925"></social-media>
+    <social-media v-if="window_width > 925" :key="rerender"></social-media>
     <section class="education" id="education">
         <div class="education-container" data-aos="zoom-out" data-aos-duration="1000">
             <h1 class="education-header">My Education</h1>
             <div class="container">
-                <div class="education-images" v-if="window_width < 425">
+                <div class="education-images" v-if="window_width < 425" :key="rerender">
                     <img src="../assets/images/clemson_logo.png" alt="Clemson Seal" loading="lazy" class="clemson-images" id="clemson-logo">
                     <img src="../assets/images/Clemson-SOC.png" alt="Clemson School of Computing" loading="lazy" class="clemson-images">
                     <img src="../assets/images/theta-chi-clemson.jpeg" alt="Theta Chi Clemson" loading="lazy" class="clemson-images">
@@ -47,12 +47,20 @@
 
         data() {
             return {
-                window_width: null
+                window_width: null,
+                rerender: 0
             }
         },
 
         mounted() {
             this.window_width = window.innerWidth;
+
+            window.addEventListener('resize', () => {
+                let prev_size = this.window_width;
+                this.window_width = window.innerWidth;
+
+                if ((prev_size >= 925 && this.window_width < 925) || (prev_size < 925 && this.window_width >= 925) || (prev_size >= 425 && this.window_width < 425) || (prev_size < 425 && this.window_width >= 425)) this.rerender += 1;
+            });
         },
 
         components: {SocialMedia, NavBar}
