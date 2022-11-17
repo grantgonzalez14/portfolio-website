@@ -6,10 +6,9 @@
             <h1 v-if="innerWidth > 425" :key="rerender" class="about-header">About Me</h1>
             <h3 v-else class="about-header">About Me</h3>
             <div class="bio">
-                <div class="bio-header">
-                  <h2>Bio</h2>
-                </div>
-                <p>I'm Grant! I'm a computer science student at Clemson University, and like every other CS student, I like to code.</p>
+                <p>I'm Grant! I'm a computer science student at Clemson University graduating in May 2023.
+                    I'm a member of Theta Chi fraternity and have held the executive position of Scholarship
+                    Chair in the past. I'm currently looking to start my career as a software engineer!</p>
             </div>
             <br><br>
             <div class="previous-experience">
@@ -99,7 +98,6 @@
     }
 
     .about-container {
-        display: flex;
         background-color: white;
         max-width: 100rem;
         height: 30rem;
@@ -109,6 +107,7 @@
         box-shadow: 0 3px 10px azure;
         justify-content: center;
         flex-direction: column;
+        overflow-y: scroll;
     }
 
     .about-container div {
@@ -116,14 +115,14 @@
         place-content: start;
     }
 
-    .about-container .bio .bio-header, .about-container .previous-experience .experience-header {
-        width: 5%;
-        margin-left: 3%;
+    .about-container .previous-experience .experience-header {
+        width: 12%;
+        margin-left: 4%;
     }
 
     .about-container .bio {
-        justify-content: left;
-        place-items: center;
+        text-align: center;
+        margin: 0 8%;
         font-family: "Montserrat", "serif";
     }
 
@@ -166,25 +165,10 @@
       .about-container {
           max-width: 30rem;
           margin: 0;
-          overflow-y: auto;
-      }
-
-      .about-header {
-          height: 16%;
-          overflow-y: auto;
-          overflow-x: auto;
       }
 
       .bio {
-          height: 10%;
-          text-align: center;
           margin: 0 8%;
-      }
-
-      .about-container .bio .bio-header {
-          height: 0;
-          width: 0;
-          visibility: hidden;
       }
 
       .about-container .previous-experience .experience-header {
@@ -192,15 +176,13 @@
       }
 
       .about-header, .previous-experience, .experience-header {
-          overflow-y: auto;
-          overflow-x: auto;
+
       }
   }
 
     @media screen and (max-width: 425px) {
         .about {
             max-width: 100%;
-            height: 95vh;
         }
 
         .about-container {
@@ -208,39 +190,16 @@
             margin: 0;
         }
 
-        .about-header {
-            height: 15%;
-            margin-bottom: 3rem;
-            overflow-y: hidden;
-        }
-
-        .bio {
-            height: 10%;
-            text-align: center;
-            margin: 0 8%;
-        }
-
-        .about-container .bio .bio-header {
-            height: 0;
-            width: 0;
-            visibility: hidden;
-        }
-
         .about-container .previous-experience .experience-header {
             width: auto;
         }
 
-        .previous-experience, .experience-header {
-            overflow-y: auto;
-            overflow-x: auto;
-        }
-
         .about-container .previous-experience .qualtrics p {
-            margin-left: 2rem;
+            margin-left: 1rem;
         }
 
         .about-container .previous-experience .qualtrics ul {
-            margin-left: 0;
+            margin-left: -1rem;
         }
     }
 </style>
