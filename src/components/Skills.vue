@@ -258,7 +258,7 @@
 
     .skill-header {
         margin-bottom: 1rem;
-        margin-top: 1rem;
+        margin-top: 2rem;
         color: #7E7F83;
     }
 
