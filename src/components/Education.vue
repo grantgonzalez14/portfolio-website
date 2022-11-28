@@ -169,7 +169,7 @@
         }
 
         .education-container {
-            width: 15rem;
+            width: 20rem;
             flex-direction: column;
         }
 
