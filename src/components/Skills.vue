@@ -1029,7 +1029,7 @@
 
     .skill-header {
         margin-bottom: 1rem;
-        margin-top: 6rem;
+        margin-top: 3rem;
         color: var(--secondary-color);
     }
 
