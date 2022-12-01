@@ -63,7 +63,7 @@
     .contact h1 {
         text-align: center;
         margin-bottom: 1rem;
-        color: #14110F;
+        color: var(--primary-color);
     }
 
     .contact-form-container {
@@ -92,14 +92,14 @@
         padding-top: 10px;
         padding-bottom: 10px;
         border-radius: 5px;
-        border: 2px outset #14110F;
+        border: 2px outset var(--primary-color);
         font-size: 0.875rem;
         outline: none;
     }
 
     .input-field::placeholder {
         padding: 0.5rem;
-        color: #14110F;
+        color: var(--primary-color);
     }
 
     .submit-btn {
@@ -107,7 +107,7 @@
         padding: 10px;
         margin: 10px 0;
         background-color: white;
-        border: 2px solid #14110F;
+        border: 2px solid var(--primary-color);
         border-radius: 5px;
         font-size: 1rem;
         font-weight: 700;
@@ -115,8 +115,8 @@
     }
 
     .submit-btn:hover {
-        background-color: #14110F;
-        border: 2px solid #14110F;
+        background-color: var(--primary-color);
+        border: 2px solid var(--primary-color);
         color: #F3F3F4;
         cursor: pointer;
     }

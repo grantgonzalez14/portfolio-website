@@ -259,7 +259,7 @@
     .skill-header {
         margin-bottom: 1rem;
         margin-top: 6rem;
-        color: #7E7F83;
+        color: var(--secondary-color);
     }
 
     .skills-wrapper-large img {

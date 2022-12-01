@@ -111,7 +111,7 @@
 
 <style scoped>
     .projects {
-        background-color: #14110F;
+        background-color: var(--primary-color);
         padding: 10px 0;
         display: flex;
         flex-direction: column;
@@ -134,7 +134,7 @@
     .projects-title {
         text-align: center;
         margin-bottom: 1rem;
-        color: #7E7F83;
+        color: var(--secondary-color);
         width: 50%;
     }
 
@@ -178,7 +178,7 @@
     }
 
     .project-right a:hover {
-        color: #7E7F83;
+        color: var(--secondary-color);
     }
 
     .project-right p {

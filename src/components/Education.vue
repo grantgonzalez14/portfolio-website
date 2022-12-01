@@ -79,7 +79,7 @@
     .education-header {
         margin-bottom: 1rem;
         margin-top: 1rem;
-        color: #14110F;
+        color: var(--primary-color);
     }
 
     .container {

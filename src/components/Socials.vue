@@ -78,7 +78,7 @@
     }
 
     .linkedin {
-        background-color: #0072b1;
+        background-color: var(--linkedin-blue);
     }
 
     .github {

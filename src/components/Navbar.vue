@@ -48,7 +48,7 @@
     .nav {
         width: 100%;
         height: 45px;
-        background-color: #7E7F83;
+        background-color: var(--secondary-color);
         overflow: auto;
         visibility: visible;
     }
@@ -63,12 +63,12 @@
     }
 
     .nav a:hover {
-        background-color: #D9C5B2;
+        background-color: var(--tertiary-color);
         color: #34312D;
-        box-shadow: 0 0 5px #D9C5B2,
-                    0 0 25px #D9C5B2,
-                    0 0 50px #D9C5B2,
-                    0 0 200px #D9C5B2;
+        box-shadow: 0 0 5px var(--tertiary-color),
+                    0 0 25px var(--tertiary-color),
+                    0 0 50px var(--tertiary-color),
+                    0 0 200px var(--tertiary-color);
     }
 
     .burger-nav {
@@ -114,7 +114,7 @@
             right: -100vw;
             width: 0;
             height: 100%;
-            background-color: #7E7F83;
+            background-color: var(--secondary-color);
             transition: 0.7s;
         }
 
@@ -125,7 +125,7 @@
             font-size: 17px;
             list-style-type: none;
             padding: 15px 30px;
-            border-bottom: 1pt solid #D9C5B2;
+            border-bottom: 1pt solid var(--tertiary-color);
         }
 
         .hamburger, .bar {
@@ -146,7 +146,7 @@
 
         .bar {
             top: 0;
-            background: #7E7F83;
+            background: var(--secondary-color);
             width: 100%;
             height: 4px;
             transition: all 0.3s ease-in;

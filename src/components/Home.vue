@@ -70,7 +70,7 @@
     }
 
     .images {
-        background-color: #14110F;
+        background-color: var(--primary-color);
         text-align: center;
     }
 
@@ -85,7 +85,7 @@
     .pictures {
         display: flex;
         flex-direction: row;
-        background-color: #14110F;
+        background-color: var(--primary-color);
         text-align: center;
         align-items: center;
     }
@@ -114,7 +114,7 @@
         .pictures {
             display: flex;
             flex-direction: column;
-            background-color: #14110F;
+            background-color: var(--primary-color);
             text-align: center;
             align-items: center;
         }

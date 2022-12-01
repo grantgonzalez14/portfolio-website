@@ -111,7 +111,7 @@
         margin-top: 1rem;
         width: 100%;
         text-align: center;
-        color: #14110F;
+        color: var(--primary-color);
         font-family: "Montserrat", "serif";
     }
 
