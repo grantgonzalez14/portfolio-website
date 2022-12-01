@@ -117,7 +117,7 @@
     .submit-btn:hover {
         background-color: var(--primary-color);
         border: 2px solid var(--primary-color);
-        color: #F3F3F4;
+        color: var(--quaternary-color);
         cursor: pointer;
     }
 

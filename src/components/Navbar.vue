@@ -56,7 +56,7 @@
     .nav a {
         float: left;
         padding: 12px;
-        color: #F3F3F4;
+        color: var(--quaternary-color);
         text-decoration: none;
         font-size: 17px;
         transition: 0.2s ease-in;
@@ -99,7 +99,7 @@
         }
 
         .burger-nav a {
-            color: #F3F3F4;
+            color: var(--quaternary-color);
             text-decoration: none;
             font-size: 17px;
         }
@@ -119,7 +119,7 @@
         }
 
         .burger-nav ul li {
-            color: #F3F3F4;
+            color: var(--quaternary-color);
             text-align: left;
             text-transform: uppercase;
             font-size: 17px;
@@ -170,7 +170,7 @@
         }
 
         .hamburger.open #bar1 {
-            background-color: #F3F3F4;
+            background-color: var(--quaternary-color);
             transform: rotate(45deg) translate(6px, 5px);
         }
 
@@ -179,7 +179,7 @@
         }
 
         .hamburger.open #bar3 {
-            background-color: #F3F3F4;
+            background-color: var(--quaternary-color);
             transform: rotate(-45deg) translate(6px, -5px);
         }
 
