@@ -3,6 +3,10 @@
 </template>
 
 <style>
+    * {
+        margin: 0;
+    }
+
     :root {
         --primary-color: #14110F;
         --secondary-color: #7E7F83;
