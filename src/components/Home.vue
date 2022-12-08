@@ -88,6 +88,7 @@
         background-color: var(--primary-color);
         text-align: center;
         align-items: center;
+        margin: 0 5% 0 5%;
     }
 
     .pictures .g-img {
