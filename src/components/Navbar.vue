@@ -1,11 +1,11 @@
 <template>
     <div class="nav">
-        <a class="btn" href="/home">Home</a>
-        <a class="btn" href="/about">About</a>
-        <a class="btn" href="/education">Education</a>
-        <a class="btn" href="/skills">Skills</a>
-        <a class="btn" href="/projects">Projects</a>
-        <a class="btn" href="/contact">Contact</a>
+        <a :class="{ 'current-page': (this.current_page === 'home'), 'inactive': (this.current_page !== 'home') }" href="/home">Home</a>
+        <a :class="{ 'current-page': (this.current_page === 'about'), 'inactive': (this.current_page !== 'about') }" href="/about">About</a>
+        <a :class="{ 'current-page': (this.current_page === 'education'), 'inactive': (this.current_page !== 'education') }" href="/education">Education</a>
+        <a :class="{ 'current-page': (this.current_page === 'skills'), 'inactive': (this.current_page !== 'skills') }" href="/skills">Skills</a>
+        <a :class="{ 'current-page': (this.current_page === 'projects'), 'inactive': (this.current_page !== 'projects') }" href="/projects">Projects</a>
+        <a :class="{ 'current-page': (this.current_page === 'contact'), 'inactive': (this.current_page !== 'contact') }" href="/contact">Contact</a>
     </div>
 
 
@@ -35,6 +35,16 @@
     export default {
         name: 'nav-bar',
 
+        data() {
+            return {
+                current_page: null
+            }
+        },
+
+        mounted() {
+            this.current_page = this.$router.currentRoute._rawValue.path.split('/')[1];
+        },
+
         methods: {
             show() {
                 document.querySelector('.hamburger').classList.toggle('open');
@@ -56,19 +66,23 @@
     .nav a {
         float: left;
         padding: 12px;
-        color: var(--quaternary-color);
+        height: 46px;
         text-decoration: none;
         font-size: 17px;
         transition: 0.2s ease-in;
+        color: var(--quaternary-color)
     }
 
     .nav a:hover {
         background-color: var(--tertiary-color);
-        color: #34312D;
         box-shadow: 0 0 5px var(--tertiary-color),
                     0 0 25px var(--tertiary-color),
                     0 0 50px var(--tertiary-color),
                     0 0 200px var(--tertiary-color);
+    }
+
+    .current-page {
+        background-color: var(--tertiary-color);
     }
 
     .burger-nav {
