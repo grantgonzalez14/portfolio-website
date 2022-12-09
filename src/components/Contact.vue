@@ -1,4 +1,7 @@
 <template>
+    <video autoplay muted loop id="backgroundVideo">
+        <source src="../assets/videos/Particles_Small.mp4" type="video/mp4">
+    </video>
     <nav-bar></nav-bar>
     <social-media v-if="window_width > 925" :key="rerender"></social-media>
     <section class="contact" id="contact">
@@ -28,6 +31,7 @@
 <script>
     import NavBar from "@/components/Navbar";
     import SocialMedia from "@/components/Socials";
+
     export default {
         name: "contact-me",
 
@@ -54,6 +58,10 @@
 </script>
 
 <style scoped>
+    #backgroundVideo {
+        max-width: 115vw;
+    }
+
     .contact {
         display: grid;
         height: 85vh;
@@ -122,6 +130,10 @@
     }
 
     @media screen and (max-width: 425px) {
+        #backgroundVideo {
+            max-width: none;
+        }
+
         .contact-form-container {
             width: 80%;
             margin-top: 15%;
