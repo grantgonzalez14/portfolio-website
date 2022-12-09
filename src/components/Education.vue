@@ -1,4 +1,7 @@
 <template>
+    <video autoplay muted loop id="backgroundVideo">
+        <source src="../assets/videos/paint_splatter_from_bottom.mp4" type="video/mp4">
+    </video>
     <nav-bar></nav-bar>
     <social-media v-if="window_width > 925" :key="rerender"></social-media>
     <section class="education" id="education">
@@ -164,6 +167,10 @@
     }
 
     @media screen and (max-width: 425px) {
+        #backgroundVideo {
+            right: -100%;
+        }
+
         .education {
             max-width: 30rem;
         }
