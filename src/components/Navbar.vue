@@ -58,9 +58,10 @@
     .nav {
         width: 100%;
         height: 45px;
-        background-color: var(--secondary-color);
+        background-color: var(--primary-color);
         overflow: auto;
         visibility: visible;
+        box-shadow: 0 0 1px var(--secondary-color);
     }
 
     .nav a {
@@ -161,6 +162,7 @@
         .bar {
             top: 0;
             background: var(--secondary-color);
+            border: solid 1px var(--primary-color);
             width: 100%;
             height: 4px;
             transition: all 0.3s ease-in;
@@ -190,6 +192,7 @@
 
         .hamburger.open #bar2 {
             background-color: transparent;
+            border: none;
         }
 
         .hamburger.open #bar3 {
@@ -225,5 +228,4 @@
             background: 0 0;
         }
     }
-
 </style>
