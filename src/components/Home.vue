@@ -1,30 +1,33 @@
 <template>
+    <video autoplay muted id="backgroundVideo">
+        <source src="../assets/videos/space_time_rip_small.mp4" type="video/mp4">
+    </video>
     <nav-bar></nav-bar>
     <social-media v-if="window_width > 925" :key="rerender"></social-media>
     <div class="pictures" v-if="window_width > 425" :key="rerender">
-        <img src="../assets/images/GRingCeremony.jpeg" alt="Grant Ring Ceremony" loading="lazy" data-aos="fade-up" data-aos-duration="1000" class="g-img up">
-        <img src="../assets/images/GnBSikes.jpg" alt="Grant Ring Ceremony" loading="lazy" data-aos="fade-down" data-aos-duration="1000" class="g-img down">
-        <img src="../assets/images/GRatDV.jpeg" alt="Grant Ring Ceremony" loading="lazy" data-aos="fade-up" data-aos-duration="1000" class="g-img up double">
-        <img src="../assets/images/GatSeattleLake.jpeg" alt="Grant Ring Ceremony" loading="lazy" data-aos="fade-down" data-aos-duration="1000" class="g-img down">
-        <img src="../assets/images/GatQ.jpeg" alt="Grant Ring Ceremony" loading="lazy" data-aos="fade-up" data-aos-duration="1000" class="g-img up">
+        <img src="../assets/images/GRingCeremony.jpeg" alt="Grant Ring Ceremony" loading="lazy" data-aos="fade-up" :data-aos-duration="data_aos_animation_time" class="g-img up">
+        <img src="../assets/images/GnBSikes.jpg" alt="Grant Ring Ceremony" loading="lazy" data-aos="fade-down" :data-aos-duration="data_aos_animation_time" class="g-img down">
+        <img src="../assets/images/GRatDV.jpeg" alt="Grant Ring Ceremony" loading="lazy" data-aos="fade-up" :data-aos-duration="data_aos_animation_time" class="g-img up double">
+        <img src="../assets/images/GatSeattleLake.jpeg" alt="Grant Ring Ceremony" loading="lazy" data-aos="fade-down" :data-aos-duration="data_aos_animation_time" class="g-img down">
+        <img src="../assets/images/GatQ.jpeg" alt="Grant Ring Ceremony" loading="lazy" data-aos="fade-up" :data-aos-duration="data_aos_animation_time" class="g-img up">
     </div>
-    <div class="bio" data-aos="zoom-in" data-aos-duration="1000">
+    <div class="bio" data-aos="zoom-in" :data-aos-duration="data_aos_animation_time">
         <h1>Grant Gonzalez</h1>
         <h1>CS Student</h1>
     </div>
     <div class="pictures" v-if="window_width <= 425" :key="rerender">
-        <img src="../assets/images/GRingCeremony.jpeg" alt="Grant Ring Ceremony" loading="lazy" data-aos="fade-up-left" data-aos-duration="1000" class="g-img right">
-        <img src="../assets/images/GnBSikes.jpg" alt="Grant Ring Ceremony" loading="lazy" data-aos="fade-up-right" data-aos-duration="1000" class="g-img left">
-        <img src="../assets/images/GRatDV.jpeg" alt="Grant Ring Ceremony" loading="lazy" data-aos="fade-up-left" data-aos-duration="1000" class="g-img up right">
-        <img src="../assets/images/GatSeattleLake.jpeg" alt="Grant Ring Ceremony" loading="lazy" data-aos="fade-up-right" data-aos-duration="1000" class="g-img left">
-        <img src="../assets/images/GatQ.jpeg" alt="Grant Ring Ceremony" loading="lazy" data-aos="fade-up-left" data-aos-duration="1000" class="g-img right">
+        <img src="../assets/images/GRingCeremony.jpeg" alt="Grant Ring Ceremony" loading="lazy" data-aos="fade-up-left" :data-aos-duration="data_aos_animation_time" class="g-img right">
+        <img src="../assets/images/GnBSikes.jpg" alt="Grant Ring Ceremony" loading="lazy" data-aos="fade-up-right" :data-aos-duration="data_aos_animation_time" class="g-img left">
+        <img src="../assets/images/GRatDV.jpeg" alt="Grant Ring Ceremony" loading="lazy" data-aos="fade-up-left" :data-aos-duration="data_aos_animation_time" class="g-img up right">
+        <img src="../assets/images/GatSeattleLake.jpeg" alt="Grant Ring Ceremony" loading="lazy" data-aos="fade-up-right" :data-aos-duration="data_aos_animation_time" class="g-img left">
+        <img src="../assets/images/GatQ.jpeg" alt="Grant Ring Ceremony" loading="lazy" data-aos="fade-up-left" :data-aos-duration="data_aos_animation_time" class="g-img right">
     </div>
     <div class="images" v-if="window_width > 425" :key="rerender">
-        <img src="../assets/icons/icons8-active-directory-80.png" alt="Active Directory" loading="lazy" data-aos="fade-right" data-aos-duration="1000" class="ps-img">
-        <img src="../assets/icons/icons8-code-80.png" alt="Code Image" loading="lazy" data-aos="fade-up" data-aos-duration="1000" class="ps-img">
-        <img src="../assets/icons/icons8-code-fork-80.png" alt="Code Fork Image" loading="lazy" data-aos="fade-down" data-aos-duration="1000" class="ps-img">
-        <img src="../assets/icons/icons8-module-80.png" alt="Module Image" loading="lazy" data-aos="fade-up" data-aos-duration="1000" class="ps-img">
-        <img src="../assets/icons/icons8-web-design-80.png" alt="Web Design Image" loading="lazy" data-aos="fade-left" data-aos-duration="1000" class="ps-img">
+        <img src="../assets/icons/icons8-active-directory-80.png" alt="Active Directory" loading="lazy" data-aos="fade-right" :data-aos-duration="data_aos_animation_time" class="ps-img">
+        <img src="../assets/icons/icons8-code-80.png" alt="Code Image" loading="lazy" data-aos="fade-up" :data-aos-duration="data_aos_animation_time" class="ps-img">
+        <img src="../assets/icons/icons8-code-fork-80.png" alt="Code Fork Image" loading="lazy" data-aos="fade-down" :data-aos-duration="data_aos_animation_time" class="ps-img">
+        <img src="../assets/icons/icons8-module-80.png" alt="Module Image" loading="lazy" data-aos="fade-up" :data-aos-duration="data_aos_animation_time" class="ps-img">
+        <img src="../assets/icons/icons8-web-design-80.png" alt="Web Design Image" loading="lazy" data-aos="fade-left" :data-aos-duration="data_aos_animation_time" class="ps-img">
     </div>
 </template>
 
@@ -38,7 +41,8 @@
         data() {
             return {
                 window_width: null,
-                rerender: 0
+                rerender: 0,
+                data_aos_animation_time: 2000
             }
         },
 
@@ -58,6 +62,10 @@
 </script>
 
 <style scoped>
+    #backgroundVideo {
+        max-width: 115vw;
+    }
+
     .bio {
         display: block;
         text-align: center;
@@ -70,7 +78,7 @@
     }
 
     .images {
-        background-color: var(--primary-color);
+        background-color: transparent;
         text-align: center;
     }
 
@@ -85,7 +93,7 @@
     .pictures {
         display: flex;
         flex-direction: row;
-        background-color: var(--primary-color);
+        background-color: transparent;
         text-align: center;
         align-items: center;
         margin: 0 5% 0 5%;
@@ -112,10 +120,19 @@
     }
 
     @media screen and (max-width: 425px) {
+        #backgroundVideo {
+            max-width: none;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            font-family: "Montserrat", "serif";
+        }
+
         .pictures {
             display: flex;
             flex-direction: column;
-            background-color: var(--primary-color);
+            background-color: transparent;
             text-align: center;
             align-items: center;
         }
