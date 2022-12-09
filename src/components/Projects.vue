@@ -1,4 +1,7 @@
 <template>
+    <video autoplay muted loop id="backgroundVideo">
+        <source src="../assets/videos/purple_paint_background.mp4" type="video/mp4">
+    </video>
     <nav-bar></nav-bar>
     <social-media v-if="window_width > 925" :key="rerender"></social-media>
     <section class="projects" id="projects">
@@ -94,12 +97,10 @@
         },
 
         mounted() {
-            this.window_width = window.innerWidth;
 
             window.addEventListener('resize', () => {
                 let prev_size = this.window_width;
                 this.window_width = window.innerWidth;
-                console.log(this.window_width);
 
                 if ((prev_size >= 925 && this.window_width < 925) || (prev_size < 925 && this.window_width >= 925)) this.rerender += 1;
             });
@@ -110,8 +111,12 @@
 </script>
 
 <style scoped>
+    #backgroundVideo {
+        max-width: 115vw;
+    }
+
     .projects {
-        background-color: var(--primary-color);
+        background-color: transparent;
         padding: 10px 0;
         display: flex;
         flex-direction: column;
@@ -207,6 +212,10 @@
     }
 
     @media screen and (max-width: 925px) {
+        #backgroundVideo {
+            max-width: none;
+        }
+
         .project-right {
             width: 90%;
         }
