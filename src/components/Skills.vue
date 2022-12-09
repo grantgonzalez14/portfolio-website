@@ -1,4 +1,7 @@
 <template>
+    <video autoplay muted id="backgroundVideo">
+        <source src="../assets/videos/Color_Powder_Explosion_Top_Corners_Small.mp4" type="video/mp4">
+    </video>
     <nav-bar></nav-bar>
     <social-media v-if="window_width > 925" :key="rerender"></social-media>
     <section class="skills" id="skills">
@@ -954,6 +957,11 @@
 </script>
 
 <style scoped>
+    #backgroundVideo {
+        top: 0;
+        max-width: 115vw;
+    }
+
     .flip-card {
         display: flex;
         background-color: transparent;
@@ -1058,6 +1066,11 @@
     }
 
     @media screen and (max-width: 925px) {
+        #backgroundVideo {
+            max-width: none;
+            right: -60%;
+        }
+
         .flip-card-inner {
             width: 11rem;
             height: 11rem;
