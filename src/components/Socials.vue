@@ -30,6 +30,10 @@
 </script>
 
 <style scoped>
+    a {
+        text-decoration: none;
+    }
+
     .socials {
         position: fixed;
         bottom: 40%;
@@ -68,12 +72,12 @@
         padding: 15px 20px;
     }
 
-    .linkedin .linkedin-link:hover,
-    .github .github-link:hover {
+    .linkedin .linkedin-link,
+    .github .github-link {
         color: white;
     }
 
-    .email .email-link:hover {
+    .email .email-link {
         color: black;
     }
 
@@ -89,20 +93,20 @@
         background-color: white;
     }
 
-    .socials-text{
+    .socials-text {
         display: flex;
         flex-direction: column;
         justify-content: center;
         text-align: left;
-        opacity: 0;
         width: 100%;
-        transition: 0.3s;
+        opacity: 0;
+        transition-duration: 0.3s;
     }
 
     a:hover .socials-text {
-        opacity: 1;
         justify-content: center;
-        transition: 0.5s;
+        margin: 0;
+        opacity: 1;
     }
 
     .socials-img {
