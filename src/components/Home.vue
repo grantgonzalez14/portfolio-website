@@ -5,29 +5,38 @@
     <nav-bar></nav-bar>
     <social-media v-if="window_width > 925" :key="rerender"></social-media>
     <div class="pictures" v-if="window_width > 425" :key="rerender">
-        <img src="../assets/images/GRingCeremony.jpeg" alt="Grant Ring Ceremony" loading="lazy" data-aos="fade-up" :data-aos-duration="data_aos_animation_time" class="g-img up">
-        <img src="../assets/images/GnBSikes.jpg" alt="Grant Ring Ceremony" loading="lazy" data-aos="fade-down" :data-aos-duration="data_aos_animation_time" class="g-img down">
-        <img src="../assets/images/GRatDV.jpeg" alt="Grant Ring Ceremony" loading="lazy" data-aos="fade-up" :data-aos-duration="data_aos_animation_time" class="g-img up double">
-        <img src="../assets/images/GatSeattleLake.jpeg" alt="Grant Ring Ceremony" loading="lazy" data-aos="fade-down" :data-aos-duration="data_aos_animation_time" class="g-img down">
-        <img src="../assets/images/GatQ.jpeg" alt="Grant Ring Ceremony" loading="lazy" data-aos="fade-up" :data-aos-duration="data_aos_animation_time" class="g-img up">
+        <div class="up">
+            <img src="../assets/images/GRingCeremony.jpeg" alt="Grant Ring Ceremony" loading="lazy" data-aos="fade-up" :data-aos-duration="data_aos_animation_time" class="g-img">
+        </div>
+        <div class="down">
+            <img src="../assets/images/GnBSikes.jpg" alt="Grant Ring Ceremony" loading="lazy" data-aos="fade-down" :data-aos-duration="data_aos_animation_time" class="g-img">
+        </div>
+        <div class="up double">
+            <img src="../assets/images/GRatDV.jpeg" alt="Grant Ring Ceremony" loading="lazy" data-aos="fade-up" :data-aos-duration="data_aos_animation_time" class="g-img">
+        </div>
+        <div class="down">
+            <img src="../assets/images/GatSeattleLake.jpeg" alt="Grant Ring Ceremony" loading="lazy" data-aos="fade-down" :data-aos-duration="data_aos_animation_time" class="g-img">
+        </div>
+        <div class="up">
+            <img src="../assets/images/GatQ.jpeg" alt="Grant Ring Ceremony" loading="lazy" data-aos="fade-up" :data-aos-duration="data_aos_animation_time" class="g-img">
+        </div>
     </div>
     <div class="bio" data-aos="zoom-in" :data-aos-duration="data_aos_animation_time">
-        <h1>Grant Gonzalez</h1>
-        <h1>CS Student</h1>
-    </div>
-    <div class="pictures" v-if="window_width <= 425" :key="rerender">
-        <img src="../assets/images/GRingCeremony.jpeg" alt="Grant Ring Ceremony" loading="lazy" data-aos="fade-up-left" :data-aos-duration="data_aos_animation_time" class="g-img right">
-        <img src="../assets/images/GnBSikes.jpg" alt="Grant Ring Ceremony" loading="lazy" data-aos="fade-up-right" :data-aos-duration="data_aos_animation_time" class="g-img left">
-        <img src="../assets/images/GRatDV.jpeg" alt="Grant Ring Ceremony" loading="lazy" data-aos="fade-up-left" :data-aos-duration="data_aos_animation_time" class="g-img up right">
-        <img src="../assets/images/GatSeattleLake.jpeg" alt="Grant Ring Ceremony" loading="lazy" data-aos="fade-up-right" :data-aos-duration="data_aos_animation_time" class="g-img left">
-        <img src="../assets/images/GatQ.jpeg" alt="Grant Ring Ceremony" loading="lazy" data-aos="fade-up-left" :data-aos-duration="data_aos_animation_time" class="g-img right">
-    </div>
-    <div class="images" v-if="window_width > 425" :key="rerender">
-        <img src="../assets/icons/icons8-active-directory-80.png" alt="Active Directory" loading="lazy" data-aos="fade-right" :data-aos-duration="data_aos_animation_time" class="ps-img">
-        <img src="../assets/icons/icons8-code-80.png" alt="Code Image" loading="lazy" data-aos="fade-up" :data-aos-duration="data_aos_animation_time" class="ps-img">
-        <img src="../assets/icons/icons8-code-fork-80.png" alt="Code Fork Image" loading="lazy" data-aos="fade-down" :data-aos-duration="data_aos_animation_time" class="ps-img">
-        <img src="../assets/icons/icons8-module-80.png" alt="Module Image" loading="lazy" data-aos="fade-up" :data-aos-duration="data_aos_animation_time" class="ps-img">
-        <img src="../assets/icons/icons8-web-design-80.png" alt="Web Design Image" loading="lazy" data-aos="fade-left" :data-aos-duration="data_aos_animation_time" class="ps-img">
+        <h1 class="title">Grant Gonzalez - Software Developer</h1>
+        <h2 class="about-me">
+            Hi, I'm Grant! I'm a software developer that specializes in front-end web development!
+            I'm a results-driven web developer with a passion for creating engaging, interactive, and visually
+            appealing websites. With a deep understanding of we development principles and experience with
+            front-end technologies such as Vue.js, JavaScript, Python, HTML, and CSS, I specialize in bringing
+            complex ideas to life in a simple, effective way. <br><br>
+            I believe that great web development requires more than just technical expertise. It also requires a
+            deep understanding of user experience, design principles, and the ability to work collaboratively with
+            clients and team members. That's why I'm committed to staying up-to-date with the latest trends and best
+            practices in web development, and I'm always looking for new opportunities to learn and grow. <br><br>
+            If you're looking for a web developer who is passionate about creating high-quality, user-focused solutions,
+            I'd love to hear from you! Let's work together to create a website that truly stands out in today's crowded
+            digital landscape.
+        </h2>
     </div>
 </template>
 
@@ -72,9 +81,11 @@
         margin-bottom: 4%;
     }
 
-    h1 {
+    .title,
+    .about-me {
         color: #7E7F83;
         font-family: "Montserrat", "serif";
+        margin: 1rem 25% 0 25%;
     }
 
     .images {
@@ -99,34 +110,32 @@
         margin: 0 5% 0 5%;
     }
 
-    .pictures .g-img {
+    .g-img {
         display: inline-block;
         justify-content: center;
-        width: 12%;
+        width: 50%;
         height: 12%;
         margin: 2% 4% 0 4%;
+        border-radius: 10px;
     }
 
     .up {
-        padding-bottom: 5%;
+        width: 100%;
+        padding-bottom: 3%;
     }
 
     .down {
+        width: 100%;
         padding-top: 5%;
     }
 
     .double {
-        padding-bottom: 10%;
+        padding-bottom: 7%;
     }
 
     @media screen and (max-width: 425px) {
         #backgroundVideo {
             max-width: none;
-        }
-
-        h1 {
-            color: var(--primary-color);
-            font-family: "Montserrat", "serif";
         }
 
         .pictures {

@@ -1021,7 +1021,7 @@
     }
 
     .flip-card-back {
-        background-color: var(--secondary-color);
+        background-color: var(--quaternary-color);
         color: white;
         transform: rotateY(180deg);
         border-radius: 11px;
