@@ -26,7 +26,7 @@
         <h2 class="about-me">
             Hi, I'm Grant! I'm a software developer that specializes in front-end web development!
             I'm a results-driven web developer with a passion for creating engaging, interactive, and visually
-            appealing websites. With a deep understanding of we development principles and experience with
+            appealing websites. With a deep understanding of web development principles and experience with
             front-end technologies such as Vue.js, JavaScript, Python, HTML, and CSS, I specialize in bringing
             complex ideas to life in a simple, effective way. <br><br>
             I believe that great web development requires more than just technical expertise. It also requires a
