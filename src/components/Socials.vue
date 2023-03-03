@@ -53,7 +53,7 @@
     .socials ul li {
         transition: 0.3s;
         display: flex;
-        justify-content: end;
+        justify-content: flex-end;
         font-size: 1.5rem;
         width: 40%;
         height: 100%;

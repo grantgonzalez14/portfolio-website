@@ -30,12 +30,12 @@
 
             <div class="project-container project-card" data-aos="fade-left" data-aos-duration="1000">
                 <div class="project-left" v-if="window_width > 925" :key="rerender">
-                    <img src="../assets/images/Bug_Zapper_Coming_Soon.png" alt="Portfolio Website" loading="lazy" class="project-pic"/>
+                    <img src="../assets/images/Bug_Zapper_Home_Page.png" alt="Bug Zapper Home Page" loading="lazy" class="project-pic"/>
                 </div>
                 <div class="project-right">
                     <h3 class="project-title"><i>Bug Zapper</i></h3>
                     <div class="pictures" v-if="window_width <= 925" :key="rerender">
-                        <img src="../assets/images/Bug_Zapper_Coming_Soon.png" alt="Portfolio Website" loading="lazy" class="project-pic"/>
+                        <img src="../assets/images/Bug_Zapper_Home_Page.png" alt="Bug Zapper Home Page" loading="lazy" class="project-pic"/>
                     </div>
                     <p><strong>Made with:</strong>
                         <img src="../assets/icons/icons8-react-30.png" alt="React" loading="lazy" class="icon">
@@ -49,9 +49,10 @@
                         zapping all the nasty bugs in your code! With Bug Zapper, you can quickly and easily track and 
                         resolve issues in your code, ensuring that your software is of the highest quality. Bug Zapper 
                         is a user-friendly and intuitive web application that provides a centralized platform for you to
-                        resolve all of your bugs! <!-- If you're tired of dealing with those pesky bugs, try Bug Zapper today and zap 
-                        them once and for all! -->
+                        resolve all of your bugs!
                     </p></h4>
+                    <a href="https://bug-zapper.netlify.app/" target="_blank"><strong>Check it out!</strong></a>
+                    <a href="https://github.com/grantgonzalez14/bug-zapper" target="_blank"><strong>Source Code</strong></a>
                 </div>
             </div>
 
@@ -156,7 +157,7 @@
 
     .project-right a {
         display: flex;
-        justify-content: start;
+        justify-content: flex-start;
         align-items: center;
         margin-top: 3%;
         color: #14110F;
@@ -169,7 +170,7 @@
 
     .project-right p {
         display: flex;
-        justify-content: start;
+        justify-content: flex-start;
         align-items: center;
         margin-bottom: 10px;
         width: 100%;

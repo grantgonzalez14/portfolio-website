@@ -134,7 +134,7 @@
 
     .about-container div {
         display: flex;
-        place-content: start;
+        place-content: flex-start;
     }
 
     .about-container .previous-experience .experience-header, .personality-header {
@@ -163,7 +163,7 @@
 
     .about-container .previous-experience {
         justify-content: left;
-        place-items: start;
+        place-items: flex-start;
     }
 
     .about-container .previous-experience .qualtrics {
