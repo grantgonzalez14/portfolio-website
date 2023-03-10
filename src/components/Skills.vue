@@ -267,16 +267,16 @@
                         <div class="flip-card-front">
                             <img
                                 src="../assets/icons/icons8-react-160.png"
-                                alt="AWS"
+                                alt="React"
                                 loading="lazy"
                                 class="icon icon-card"
                                 data-aos="zoom-in"
                                 data-aos-duration="1000"
-                                id="aws"
+                                id="react"
                             />
                         </div>
                         <div class="flip-card-back">
-                            <h1>AWS</h1>
+                            <h1>React</h1>
                             <p><strong>Years of Experience: </strong>0.5</p>
                             <p><strong>Used at: </strong>Clemson University</p>
                             <ul>
@@ -574,16 +574,16 @@
                         <div class="flip-card-front">
                             <img
                                 src="../assets/icons/icons8-react-160.png"
-                                alt="AWS"
+                                alt="React"
                                 loading="lazy"
                                 class="icon icon-card"
                                 data-aos="zoom-in"
                                 data-aos-duration="1000"
-                                id="aws"
+                                id="react"
                             />
                         </div>
                         <div class="flip-card-back">
-                            <h1>AWS</h1>
+                            <h1>React</h1>
                             <p><strong>Years of Experience: </strong>0.5</p>
                             <p><strong>Used at: </strong>Clemson University</p>
                             <ul>
@@ -874,16 +874,16 @@
                     <div class="flip-card-front">
                         <img
                             src="../assets/icons/icons8-react-160.png"
-                            alt="AWS"
+                            alt="React"
                             loading="lazy"
                             class="icon icon-card"
                             data-aos="zoom-in"
                             data-aos-duration="1000"
-                            id="aws"
+                            id="react"
                         />
                     </div>
                     <div class="flip-card-back">
-                        <h1>AWS</h1>
+                        <h1>React</h1>
                         <p><strong>Years of Experience: </strong>0.5</p>
                         <p><strong>Used at: </strong>Clemson University</p>
                         <ul>
