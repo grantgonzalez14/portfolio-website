@@ -266,6 +266,29 @@
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <img
+                                src="../assets/icons/icons8-react-160.png"
+                                alt="AWS"
+                                loading="lazy"
+                                class="icon icon-card"
+                                data-aos="zoom-in"
+                                data-aos-duration="1000"
+                                id="aws"
+                            />
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>AWS</h1>
+                            <p><strong>Years of Experience: </strong>0.5</p>
+                            <p><strong>Used at: </strong>Clemson University</p>
+                            <ul>
+                                <li>Bug Zapper</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img
                                 src="../assets/icons/icons8-flask-100.png"
                                 alt="Flask"
                                 loading="lazy"
@@ -282,29 +305,6 @@
                             <ul>
                                 <li>Professional Issues II</li>
                                 <li>Software Test Engineer Internship</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="flip-card" data-aos="fade-up-left" data-aos-duration="1000">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img
-                                src="../assets/icons/icons8-amazon-web-services-144.png"
-                                alt="AWS"
-                                loading="lazy"
-                                class="icon icon-card"
-                                data-aos="zoom-in"
-                                data-aos-duration="1000"
-                                id="aws"
-                            />
-                        </div>
-                        <div class="flip-card-back">
-                            <h1>AWS</h1>
-                            <p><strong>Years of Experience: </strong>0.5</p>
-                            <p><strong>Used at: </strong>Clemson University</p>
-                            <ul>
-                                <li>Professional Issues II</li>
                             </ul>
                         </div>
                     </div>
@@ -573,6 +573,29 @@
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <img
+                                src="../assets/icons/icons8-react-160.png"
+                                alt="AWS"
+                                loading="lazy"
+                                class="icon icon-card"
+                                data-aos="zoom-in"
+                                data-aos-duration="1000"
+                                id="aws"
+                            />
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>AWS</h1>
+                            <p><strong>Years of Experience: </strong>0.5</p>
+                            <p><strong>Used at: </strong>Clemson University</p>
+                            <ul>
+                                <li>Bug Zapper</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img
                                 src="../assets/icons/icons8-flask-100.png"
                                 alt="Flask"
                                 loading="lazy"
@@ -589,29 +612,6 @@
                             <ul>
                                 <li>Professional Issues II</li>
                                 <li>Software Test Engineer Internship</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="flip-card" data-aos="fade-up-left" data-aos-duration="1000">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img
-                                src="../assets/icons/icons8-amazon-web-services-144.png"
-                                alt="AWS"
-                                loading="lazy"
-                                class="icon icon-card"
-                                data-aos="zoom-in"
-                                data-aos-duration="1000"
-                                id="aws"
-                            />
-                        </div>
-                        <div class="flip-card-back">
-                            <h1>AWS</h1>
-                            <p><strong>Years of Experience: </strong>0.5</p>
-                            <p><strong>Used at: </strong>Clemson University</p>
-                            <ul>
-                                <li>Professional Issues II</li>
                             </ul>
                         </div>
                     </div>
@@ -873,6 +873,29 @@
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
                         <img
+                            src="../assets/icons/icons8-react-160.png"
+                            alt="AWS"
+                            loading="lazy"
+                            class="icon icon-card"
+                            data-aos="zoom-in"
+                            data-aos-duration="1000"
+                            id="aws"
+                        />
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>AWS</h1>
+                        <p><strong>Years of Experience: </strong>0.5</p>
+                        <p><strong>Used at: </strong>Clemson University</p>
+                        <ul>
+                            <li>Bug Zapper</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card" data-aos="fade-up-left" data-aos-duration="1000">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img
                             src="../assets/icons/icons8-flask-100.png"
                             alt="Flask"
                             loading="lazy"
@@ -889,29 +912,6 @@
                         <ul>
                             <li>Professional Issues II</li>
                             <li>Software Test Engineer Internship</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="flip-card" data-aos="fade-up-left" data-aos-duration="1000">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img
-                            src="../assets/icons/icons8-amazon-web-services-144.png"
-                            alt="AWS"
-                            loading="lazy"
-                            class="icon icon-card"
-                            data-aos="zoom-in"
-                            data-aos-duration="1000"
-                            id="aws"
-                        />
-                    </div>
-                    <div class="flip-card-back">
-                        <h1>AWS</h1>
-                        <p><strong>Years of Experience: </strong>0.5</p>
-                        <p><strong>Used at: </strong>Clemson University</p>
-                        <ul>
-                            <li>Professional Issues II</li>
                         </ul>
                     </div>
                 </div>
