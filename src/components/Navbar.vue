@@ -59,8 +59,8 @@
         width: 100%;
         height: 45px;
         background-color: var(--primary-color);
-        overflow: auto;
         visibility: visible;
+        overflow: hidden;
         box-shadow: 0 0 1px var(--secondary-color);
     }
 
