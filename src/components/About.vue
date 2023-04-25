@@ -1,4 +1,7 @@
 <template>
+    <video autoplay muted id="backgroundVideo" loop>
+        <source src="../assets/videos/About_Background_Video.mp4" type="video/mp4">
+    </video>
     <nav-bar></nav-bar>
     <social-media v-if="window_width > 925" :key="rerender"></social-media>
     <section class="about">
