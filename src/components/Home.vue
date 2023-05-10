@@ -6,16 +6,16 @@
     <social-media v-if="window_width > 925" :key="rerender"></social-media>
     <div class="pictures" v-if="window_width > 425" :key="rerender">
         <div class="up">
-            <img src="../assets/images/GRingCeremony.jpeg" alt="Grant Ring Ceremony" loading="lazy" data-aos="fade-up" :data-aos-duration="data_aos_animation_time" class="g-img">
+            <img src="../assets/images/GatSeattleLake.jpeg" alt="Grant Ring Ceremony" loading="lazy" data-aos="fade-up" :data-aos-duration="data_aos_animation_time" class="g-img">
         </div>
         <div class="down">
-            <img src="../assets/images/GnBSikes.jpg" alt="Grant Ring Ceremony" loading="lazy" data-aos="fade-down" :data-aos-duration="data_aos_animation_time" class="g-img">
+            <img src="../assets/images/GGGradBowman.jpeg" alt="Grant Ring Ceremony" loading="lazy" data-aos="fade-down" :data-aos-duration="data_aos_animation_time" class="g-img">
         </div>
-        <div class="up double">
-            <img src="../assets/images/GRatDV.jpeg" alt="Grant Ring Ceremony" loading="lazy" data-aos="fade-up" :data-aos-duration="data_aos_animation_time" class="g-img">
+        <div class="up">
+            <img src="../assets/images/GGGradSikes.jpeg" alt="Grant Ring Ceremony" loading="lazy" data-aos="fade-up" :data-aos-duration="data_aos_animation_time" class="g-img">
         </div>
         <div class="down">
-            <img src="../assets/images/GatSeattleLake.jpeg" alt="Grant Ring Ceremony" loading="lazy" data-aos="fade-down" :data-aos-duration="data_aos_animation_time" class="g-img">
+            <img src="../assets/images/GGGradBowmanRing.jpeg" alt="Grant Ring Ceremony" loading="lazy" data-aos="fade-down" :data-aos-duration="data_aos_animation_time" class="g-img">
         </div>
         <div class="up">
             <img src="../assets/images/GatQ.jpeg" alt="Grant Ring Ceremony" loading="lazy" data-aos="fade-up" :data-aos-duration="data_aos_animation_time" class="g-img">
