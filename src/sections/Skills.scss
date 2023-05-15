@@ -67,6 +67,7 @@ strong, h1 {
 
 .skills {
     max-width: 68.75rem;
+    height: 80vh;
     margin: auto;
     text-align: center;
 }
@@ -74,7 +75,7 @@ strong, h1 {
 .skill-header {
     margin-bottom: 1rem;
     margin-top: 3rem;
-    color: var(--secondary-color);
+    color: var(--text-secondary);
 }
 
 .icon {

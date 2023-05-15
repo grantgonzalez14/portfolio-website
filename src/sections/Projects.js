@@ -5,7 +5,7 @@ function Projects() {
     return (
         <>
             <section class='projects' id='projects'>
-                <h1 class='projects-title' data-aos='flip-down' data-aos-duration='1000'>My Projects</h1>
+                <h1 class='projects-header' data-aos='flip-down' data-aos-duration='1000'>My Projects</h1>
                 <div class='projects-container'>
                     <div class='project-container project-card' data-aos='fade-left' data-aos-duration='1000'>
                         <div class='project-left'>
