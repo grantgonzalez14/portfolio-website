@@ -1,0 +1,147 @@
+.about {
+    display: grid;
+    place-items: center;
+    height: 85vh;
+    max-width: 80rem;
+    margin: 1rem auto;
+}
+
+.about-header {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    width: 100%;
+    text-align: center;
+    color: var(--primary-color);
+    font-family: "Montserrat", "serif";
+}
+
+.about-container {
+    background-color: white;
+    max-width: 100rem;
+    height: 30rem;
+    margin: 1% auto;
+    padding: 0.938rem;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px azure;
+    justify-content: center;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
+.about-container div {
+    display: flex;
+    place-content: flex-start;
+}
+
+.about-container .previous-experience .experience-header, .personality-header {
+    width: 12%;
+    margin-left: 4%;
+}
+
+.experience-header, .personality-header {
+    font-family: "Montserrat", "serif";
+}
+
+.personality {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: "Montserrat", "serif";
+    margin: 0 8% 0 4%;
+}
+
+.about-container .bio {
+    text-align: center;
+    margin: 0 8%;
+    font-family: "Montserrat", "serif";
+}
+
+
+.about-container .previous-experience {
+    justify-content: left;
+    place-items: flex-start;
+}
+
+.about-container .previous-experience .qualtrics {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-container .previous-experience .eleos {
+    width: 35%;
+    margin-left: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-container .previous-experience .qualtrics p, .about-container .previous-experience .eleos p {
+    margin-left: 3rem;
+    font-family: "Montserrat", "serif";
+}
+
+.about-container .previous-experience .qualtrics ul, .about-container .previous-experience .eleos ul {
+    margin-left: 1rem;
+    font-family: "Montserrat","serif";
+    font-size: 14px;
+}
+
+.vue-pdf-embed {
+    display: flex;
+    flex-direction: column;
+    max-width: 60vw;
+    height: 100%;
+}
+
+@media screen and (max-width: 925px) {
+  #backgroundVideo {
+      max-width: none;
+  }
+
+  .about {
+      max-width: 100%;
+      height: 100vh;
+  }
+
+  .about-container {
+      max-width: 30rem;
+      margin: 0;
+  }
+
+  .bio {
+      margin: 0 8%;
+  }
+
+  .about-container .experience-header {
+      width: 100%;
+      justify-content: center;
+  }
+}
+
+@media screen and (max-width: 425px) {
+    #backgroundVideo {
+        top: -40%;
+        right: -10%;
+    }
+
+    .about {
+        max-width: 100%;
+    }
+
+    .about-container {
+        max-width: 15rem;
+        margin: 0;
+    }
+
+    .about-container .previous-experience .experience-header {
+        width: auto;
+    }
+
+    .about-container .previous-experience .qualtrics p {
+        margin-left: 1rem;
+    }
+
+    .about-container .previous-experience .qualtrics ul {
+        margin-left: -1rem;
+    }
+}

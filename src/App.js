@@ -3,6 +3,7 @@ import Aos from 'aos';
 
 import Navbar from './components/Navbar';
 import Home from './sections/Home';
+import About from './sections/About';
 
 function App() {
 	Aos.init();
@@ -11,6 +12,7 @@ function App() {
 		<>
 			<Navbar />
 			<Home />
+			<About />
 		</>
 	);
 }

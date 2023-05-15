@@ -27,6 +27,7 @@ main {
     background-color: var(--bg-primary);
     transition: width 600ms ease;
     overflow: scroll;
+    z-index: 999;
 }
 
 .navbar-nav {
