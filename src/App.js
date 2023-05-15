@@ -1,9 +1,9 @@
 import './App.scss';
 import Aos from 'aos';
-
 import Navbar from './components/Navbar';
 import Home from './sections/Home';
 import About from './sections/About';
+import Education from './sections/Education';
 
 function App() {
 	Aos.init();
@@ -13,6 +13,7 @@ function App() {
 			<Navbar />
 			<Home />
 			<About />
+			<Education />
 		</>
 	);
 }

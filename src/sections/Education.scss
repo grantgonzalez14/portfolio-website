@@ -1,0 +1,130 @@
+.education {
+    display: grid;
+    place-items: center;
+    height: 85vh;
+    margin: 1rem auto;
+    text-align: center;
+}
+
+.education-header {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    color: var(--primary-color);
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.education-container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 50rem;
+    margin: 0 auto;
+    padding: 0.938rem;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px azure;
+    justify-content: left;
+}
+
+.education-images {
+    width: 50%;
+}
+
+.education-images-container {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+}
+
+.clemson-images {
+    height: 150px;
+    width: 150px;
+    margin-top: 2rem;
+    padding: 0.25rem;
+}
+
+.education-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 5%;
+    margin-bottom: 0.5rem;
+    overflow-wrap: normal;
+}
+
+.education-info h3 {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+    justify-content: left;
+}
+
+.education-info h3 p {
+    margin-bottom: 0;
+    margin-top: 0;
+    font-family: "Montserrat", "serif";
+}
+
+@media screen and (max-width: 925px) {
+    .education {
+        max-width: 30rem;
+    }
+
+    .education-container {
+        max-width: 30rem;
+    }
+
+    .clemson-images {
+        height: 100px;
+        width: 100px;
+        margin-top: 0.5rem;
+    }
+
+    .container {
+        width: 60vw;
+        text-align: left;
+    }
+
+    #clemson-logo, #theta-chi {
+        margin-top: 3rem;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    #backgroundVideo {
+        right: -100%;
+    }
+
+    .education {
+        max-width: 30rem;
+    }
+
+    .education-container {
+        width: 20rem;
+        flex-direction: column;
+    }
+
+    .education-images {
+        width: 50%;
+    }
+
+    .clemson-images {
+        height: 100px;
+        width: 100px;
+    }
+
+    #clemson-logo {
+        margin-top: 1rem;
+    }
+
+    #theta-chi {
+        margin-top: 0;
+    }
+
+    .container {
+        text-align: left;
+    }
+}
