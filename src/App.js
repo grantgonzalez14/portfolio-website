@@ -6,6 +6,7 @@ import About from './sections/About';
 import Education from './sections/Education';
 import Skills from './sections/Skills';
 import Projects from './sections/Projects';
+import Contact from './sections/Contact';
 
 function App() {
 	Aos.init();
@@ -19,6 +20,7 @@ function App() {
 				<Education />
 				<Skills />
 				<Projects />
+				<Contact />
 			</div>
 		</>
 	);
