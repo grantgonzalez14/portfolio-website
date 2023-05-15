@@ -4,20 +4,20 @@ import './Projects.scss';
 function Projects() {
     return (
         <>
-            <section class='projects' id='projects'>
-                <h1 class='projects-header' data-aos='flip-down' data-aos-duration='1000'>My Projects</h1>
-                <div class='projects-container'>
-                    <div class='project-container project-card' data-aos='fade-left' data-aos-duration='1000'>
-                        <div class='project-left'>
-                            <img src='assets/images/portfolio-website.png' alt='Portfolio Website' loading='lazy' class='project-pic' />
+            <section className='projects' id='projects'>
+                <h1 className='projects-header' data-aos='flip-down' data-aos-duration='1000'>My Projects</h1>
+                <div className='projects-container'>
+                    <div className='project-container project-card' data-aos='fade-left' data-aos-duration='1000'>
+                        <div className='project-left'>
+                            <img src='assets/images/portfolio-website.png' alt='Portfolio Website' loading='lazy' className='project-pic' />
                         </div>
-                        <div class='project-right'>
-                            <h3 class='project-title'><i>Portfolio Website</i></h3>
+                        <div className='project-right'>
+                            <h3 className='project-title'><i>Portfolio Website</i></h3>
                             <p><strong>Made with:</strong>
-                                <img src='assets/icons/icons8-vue-js-48.png' alt='Vue JS' loading='lazy' class='icon' />
-                                <img src='assets/icons/icons8-javascript.svg' alt='Javascript' loading='lazy' class='icon' />
-                                <img src='assets/icons/icons8-css3.svg' alt='CSS3' loading='lazy' class='icon' />
-                                <img src='assets/icons/icons8-html-5.svg' alt='HTML5' loading='lazy' class='icon' />
+                                <img src='assets/icons/icons8-vue-js-48.png' alt='Vue JS' loading='lazy' className='icon' />
+                                <img src='assets/icons/icons8-javascript.svg' alt='Javascript' loading='lazy' className='icon' />
+                                <img src='assets/icons/icons8-css3.svg' alt='CSS3' loading='lazy' className='icon' />
+                                <img src='assets/icons/icons8-html-5.svg' alt='HTML5' loading='lazy' className='icon' />
                             </p>
                             <h4>Description:<p>You're lookin' at it!</p></h4>
                             <a href='/home'><strong>Check it out!</strong></a>
@@ -25,18 +25,18 @@ function Projects() {
                         </div>
                     </div>
 
-                    <div class='project-container project-card' data-aos='fade-left' data-aos-duration='1000'>
-                        <div class='project-left'>
-                            <img src='assets/images/Bug_Zapper_Home_Page.png' alt='Bug Zapper Home Page' loading='lazy' class='project-pic' />
+                    <div className='project-container project-card' data-aos='fade-left' data-aos-duration='1000'>
+                        <div className='project-left'>
+                            <img src='assets/images/Bug_Zapper_Home_Page.png' alt='Bug Zapper Home Page' loading='lazy' className='project-pic' />
                         </div>
-                        <div class='project-right'>
-                            <h3 class='project-title'><i>Bug Zapper</i></h3>
+                        <div className='project-right'>
+                            <h3 className='project-title'><i>Bug Zapper</i></h3>
                             <p><strong>Made with:</strong>
-                                <img src='assets/icons/icons8-react-30.png' alt='React' loading='lazy' class='icon' />
-                                <img src='assets/icons/icons8-javascript.svg' alt='Javascript' loading='lazy' class='icon' />
-                                <img src='assets/icons/icons8-css3.svg' alt='CSS3' loading='lazy' class='icon' />
-                                <img src='assets/icons/icons8-html-5.svg' alt='HTML5' loading='lazy' class='icon' />
-                                <img src='assets/icons/icons8-firebase-48.png' alt='Firebase' loading='lazy' class='icon' />
+                                <img src='assets/icons/icons8-react-30.png' alt='React' loading='lazy' className='icon' />
+                                <img src='assets/icons/icons8-javascript.svg' alt='Javascript' loading='lazy' className='icon' />
+                                <img src='assets/icons/icons8-css3.svg' alt='CSS3' loading='lazy' className='icon' />
+                                <img src='assets/icons/icons8-html-5.svg' alt='HTML5' loading='lazy' className='icon' />
+                                <img src='assets/icons/icons8-firebase-48.png' alt='Firebase' loading='lazy' className='icon' />
                             </p>
                             <h4>Description:<p>
                                 Say goodbye to those pesky bugs with Bug Zapper, the ultimate web application for tracking and 

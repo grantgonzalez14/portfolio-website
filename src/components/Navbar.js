@@ -7,7 +7,7 @@ function Navbar() {
             <nav className='navbar'>
                 <ul className='navbar-nav'>
                     <li className='logo'>
-                        <a href='google.com' className='nav-link'>
+                        <a href='#Home' className='nav-link'>
                             <span className='link-text logo-text'><img src='assets/images/GGLogo.png' alt='Grant Gonzalez Logo' className='logo-img'/> </span>
                             <svg
                                 aria-hidden='true'
@@ -36,7 +36,7 @@ function Navbar() {
                     </li>
 
                     <li className='nav-item'>
-                        <a href='google.com' className='nav-link'>
+                        <a href='#Home' className='nav-link'>
                             <svg 
                                 aria-hidden='true'
                                 focusable='false'
@@ -57,7 +57,7 @@ function Navbar() {
                     </li>
 
                     <li className='nav-item'>
-                        <a href='a' className='nav-link'>
+                        <a href='#About' className='nav-link'>
                             <svg 
                                 aria-hidden='true'
                                 focusable='false'
@@ -78,7 +78,7 @@ function Navbar() {
                     </li>
 
                     <li className='nav-item'>
-                        <a href='google.com' className='nav-link'>
+                        <a href='#Education' className='nav-link'>
                             <svg 
                                 aria-hidden='true'
                                 focusable='false'
@@ -99,7 +99,7 @@ function Navbar() {
                     </li>
 
                     <li className='nav-item'>
-                        <a href='google.com' className='nav-link'>
+                        <a href='#Skills' className='nav-link'>
                             <svg 
                                 aria-hidden='true'
                                 focusable='false'
@@ -120,7 +120,7 @@ function Navbar() {
                     </li>
 
                     <li className='nav-item'>
-                        <a href='google.com' className='nav-link'>
+                        <a href='#Projects' className='nav-link'>
                             <svg 
                                 aria-hidden='true'
                                 focusable='false'
@@ -141,7 +141,7 @@ function Navbar() {
                     </li>
 
                     <li className='nav-item'>
-                        <a href='google.com' className='nav-link'>
+                        <a href='#Contact' className='nav-link'>
                             <svg 
                                 aria-hidden='true'
                                 focusable='false'
