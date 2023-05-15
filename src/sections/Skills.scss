@@ -1,69 +1,69 @@
-.flip-card {
-    display: flex;
-    background-color: transparent;
-    perspective: 1000px;
-    justify-content: center;
-    margin: 1.25rem;
-}
+// .flip-card {
+//     display: flex;
+//     background-color: transparent;
+//     perspective: 1000px;
+//     justify-content: center;
+//     margin: 1.25rem;
+// }
 
-.flip-card-inner {
-    position: relative;
-    width: 14.375rem;
-    height: 13.75rem;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-}
+// .flip-card-inner {
+//     position: relative;
+//     width: 14.375rem;
+//     height: 13.75rem;
+//     transition: transform 0.6s;
+//     transform-style: preserve-3d;
+// }
 
-.flip-card-inner p,
-.flip-card-inner ul,
-.flip-card-inner ul li {
-    text-align: left;
-    color: var(--primary-color);
-}
+// .flip-card-inner p,
+// .flip-card-inner ul,
+// .flip-card-inner ul li {
+//     text-align: left;
+//     color: var(--primary-color);
+// }
 
-.flip-card-inner p {
-    margin-left: 1rem;
-}
+// .flip-card-inner p {
+//     margin-left: 1rem;
+// }
 
-.flip-card-inner ul li {
-    margin-bottom: 0.5rem;
-}
+// .flip-card-inner ul li {
+//     margin-bottom: 0.5rem;
+// }
 
-strong, h1 {
-    color: var(--primary-color);
-}
+// strong, h1 {
+//     color: var(--primary-color);
+// }
 
-.flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-}
+// .flip-card:hover .flip-card-inner {
+//     transform: rotateY(180deg);
+// }
 
-.flip-card-front, .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-}
+// .flip-card-front, .flip-card-back {
+//     position: absolute;
+//     width: 100%;
+//     height: 100%;
+//     -webkit-backface-visibility: hidden;
+//     backface-visibility: hidden;
+// }
 
-.flip-card-front {
-    background-color: white;
-    color: black;
-    border-radius: 11px;
-    box-shadow: 0 3px 10px azure;
-}
+// .flip-card-front {
+//     background-color: white;
+//     color: black;
+//     border-radius: 11px;
+//     box-shadow: 0 3px 10px azure;
+// }
 
-.flip-card-front img {
-    padding: 1.25rem;
-}
+// .flip-card-front img {
+//     padding: 1.25rem;
+// }
 
-.flip-card-back {
-    background-color: var(--quaternary-color);
-    color: white;
-    transform: rotateY(180deg);
-    border-radius: 11px;
-    box-shadow: 0 3px 10px azure;
-    overflow-y: auto;
-}
+// .flip-card-back {
+//     background-color: var(--quaternary-color);
+//     color: white;
+//     transform: rotateY(180deg);
+//     border-radius: 11px;
+//     box-shadow: 0 3px 10px azure;
+//     overflow-y: auto;
+// }
 
 .skills {
     max-width: 68.75rem;
@@ -78,6 +78,10 @@ strong, h1 {
     color: var(--text-secondary);
 }
 
+.skills-wrapper-large img {
+    padding: 1.25rem;
+}
+
 .icon {
     width: 11.875rem;
     height: 11.25rem;
@@ -88,28 +92,61 @@ strong, h1 {
     border-radius: 11px;
     box-shadow: 0 3px 10px azure;
     padding: 20px;
+    margin: 20px;
 }
 
-.row {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.column {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.icon:hover,
+.icon-card:hover {
+    width: 12.875rem;
+    height: 12.25rem;
+    margin: 12px 12.5px;
+    transition-timing-function: ease;
 }
 
 @media screen and (max-width: 925px) {
-    .flip-card-inner {
-        width: 11rem;
-        height: 11rem;
-    }
-
     .icon {
         width: 9rem;
         height: 9rem;
     }
+
+    .icon:hover, .icon-card:hover {
+        width: 11rem;
+        height: 11rem;
+    }
 }
+
+// .icon {
+//     width: 11.875rem;
+//     height: 11.25rem;
+// }
+
+// .icon-card {
+//     background-color: white;
+//     border-radius: 11px;
+//     box-shadow: 0 3px 10px azure;
+//     padding: 20px;
+// }
+
+// .row {
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: center;
+// }
+
+// .column {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+// }
+
+// @media screen and (max-width: 925px) {
+//     .flip-card-inner {
+//         width: 11rem;
+//         height: 11rem;
+//     }
+
+//     .icon {
+//         width: 9rem;
+//         height: 9rem;
+//     }
+// }
