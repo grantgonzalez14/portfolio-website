@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-scroll';
 import './Navbar.scss';
 
 function Navbar() {
@@ -7,8 +8,14 @@ function Navbar() {
             <nav className='navbar'>
                 <ul className='navbar-nav'>
                     <li className='logo'>
-                        <a href='#Home' className='nav-link'>
-                            <span className='link-text logo-text'><img src='assets/images/GGLogo.png' alt='Grant Gonzalez Logo' className='logo-img'/> </span>
+                        <Link
+                            activeClass='active'
+                            to='Home'
+                            smooth={true}
+                            duration={0}
+                            className='nav-link'
+                        >
+                            <span className='link-text logo-text'><img src='assets/images/GGLogo.png' alt='Grant Gonzalez Logo' className='logo-img'/></span>
                             <svg
                                 aria-hidden='true'
                                 focusable='false'
@@ -32,11 +39,17 @@ function Navbar() {
                                     ></path>
                                 </g>
                             </svg>
-                        </a>
+                        </Link>
                     </li>
 
                     <li className='nav-item'>
-                        <a href='#Home' className='nav-link'>
+                        <Link
+                            activeClass='active'
+                            to='Home'
+                            smooth={true}
+                            duration={0}
+                            className='nav-link'
+                        >
                             <svg 
                                 aria-hidden='true'
                                 focusable='false'
@@ -53,11 +66,17 @@ function Navbar() {
                                 />
                             </svg>
                             <span className='link-text'>Home</span>
-                        </a>
+                        </Link>
                     </li>
 
                     <li className='nav-item'>
-                        <a href='#About' className='nav-link'>
+                        <Link
+                            activeClass='active'
+                            to='About'
+                            smooth={true}
+                            duration={0}
+                            className='nav-link'
+                        >
                             <svg 
                                 aria-hidden='true'
                                 focusable='false'
@@ -74,11 +93,17 @@ function Navbar() {
                                 />
                             </svg>
                             <span className='link-text'>About</span>
-                        </a>
+                        </Link>
                     </li>
 
                     <li className='nav-item'>
-                        <a href='#Education' className='nav-link'>
+                        <Link
+                            activeClass='active'
+                            to='Education'
+                            smooth={true}
+                            duration={0}
+                            className='nav-link'
+                        >
                             <svg 
                                 aria-hidden='true'
                                 focusable='false'
@@ -95,11 +120,17 @@ function Navbar() {
                                 />
                             </svg>
                             <span className='link-text'>Education</span>
-                        </a>
+                        </Link>
                     </li>
 
                     <li className='nav-item'>
-                        <a href='#Skills' className='nav-link'>
+                        <Link
+                            activeClass='active'
+                            to='Skills'
+                            smooth={true}
+                            duration={0}
+                            className='nav-link'
+                        >
                             <svg 
                                 aria-hidden='true'
                                 focusable='false'
@@ -116,11 +147,17 @@ function Navbar() {
                                 />
                             </svg>
                             <span className='link-text'>Skills</span>
-                        </a>
+                        </Link>
                     </li>
 
                     <li className='nav-item'>
-                        <a href='#Projects' className='nav-link'>
+                        <Link
+                            activeClass='active'
+                            to='Projects'
+                            smooth={true}
+                            duration={0}
+                            className='nav-link'
+                        >
                             <svg 
                                 aria-hidden='true'
                                 focusable='false'
@@ -137,11 +174,17 @@ function Navbar() {
                                 />
                             </svg>
                             <span className='link-text'>Projects</span>
-                        </a>
+                        </Link>
                     </li>
 
                     <li className='nav-item'>
-                        <a href='#Contact' className='nav-link'>
+                        <Link
+                            activeClass='active'
+                            to='Contact'
+                            smooth={true}
+                            duration={0}
+                            className='nav-link'
+                        >
                             <svg 
                                 aria-hidden='true'
                                 focusable='false'
@@ -158,7 +201,7 @@ function Navbar() {
                                 />
                             </svg>
                             <span className='link-text'>Contact</span>
-                        </a>
+                        </Link>
                     </li>
 
                     <li className='nav-item'>
