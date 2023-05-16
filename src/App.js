@@ -10,7 +10,6 @@ import Contact from './sections/Contact';
 import { Element } from 'react-scroll';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 
-
 function App() {
 	Aos.init();
 
@@ -18,9 +17,9 @@ function App() {
 		<>
 			<Navbar />
 			<Parallax pages={6}>
-				<ParallaxLayer offset={0} speed={0.25} factor={12} className='parallax'/>
+				<ParallaxLayer offset={0} speed={0.5} factor={12} className='parallax'/>
 				<Element name='Home'>
-					<ParallaxLayer offset={0} speed={1} factor={6}>
+					<ParallaxLayer offset={0} speed={1}>
 						<Home />
 					</ParallaxLayer>
 				</Element>
