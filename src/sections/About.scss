@@ -26,28 +26,20 @@
     justify-content: center;
     flex-direction: column;
     overflow-y: scroll;
+
+    div {
+        display: flex;
+        place-content: flex-start;
+    }
 }
 
-.about-container div {
-    display: flex;
-    place-content: flex-start;
-}
-
-.about-container .previous-experience .experience-header, .personality-header {
+.about-container .previous-experience .experience-header {
     width: 12%;
     margin-left: 4%;
 }
 
-.experience-header, .personality-header {
+.experience-header {
     font-family: "Montserrat", "serif";
-}
-
-.personality {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    font-family: "Montserrat", "serif";
-    margin: 0 8% 0 4%;
 }
 
 .about-container .bio {
@@ -86,44 +78,28 @@
     font-size: 14px;
 }
 
-.vue-pdf-embed {
-    display: flex;
-    flex-direction: column;
-    max-width: 60vw;
-    height: 100%;
-}
-
 @media screen and (max-width: 925px) {
-  #backgroundVideo {
-      max-width: none;
-  }
+    .about {
+        max-width: 100%;
+        height: 100vh;
+    }
 
-  .about {
-      max-width: 100%;
-      height: 100vh;
-  }
+    .about-container {
+        max-width: 30rem;
+        margin: 0;
 
-  .about-container {
-      max-width: 30rem;
-      margin: 0;
-  }
+        .experience-header {
+            width: 100%;
+            justify-content: center;
+        }
+    }
 
-  .bio {
-      margin: 0 8%;
-  }
-
-  .about-container .experience-header {
-      width: 100%;
-      justify-content: center;
-  }
+    .bio {
+        margin: 0 8%;
+    }
 }
 
 @media screen and (max-width: 425px) {
-    #backgroundVideo {
-        top: -40%;
-        right: -10%;
-    }
-
     .about {
         max-width: 100%;
     }

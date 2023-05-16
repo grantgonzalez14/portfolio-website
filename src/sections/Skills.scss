@@ -18,6 +18,13 @@
 .icon {
     width: 11.875rem;
     height: 11.25rem;
+
+    &:hover {
+        width: 12.875rem;
+        height: 12.25rem;
+        margin: 12px 12.5px;
+        transition-timing-function: ease;
+    }
 }
 
 .icon-card {
@@ -26,23 +33,27 @@
     box-shadow: 0 3px 10px azure;
     padding: 20px;
     margin: 20px;
-}
 
-.icon:hover,
-.icon-card:hover {
-    width: 12.875rem;
-    height: 12.25rem;
-    margin: 12px 12.5px;
-    transition-timing-function: ease;
+    &:hover {
+        width: 12.875rem;
+        height: 12.25rem;
+        margin: 12px 12.5px;
+        transition-timing-function: ease;
+    }
 }
 
 @media screen and (max-width: 925px) {
     .icon {
         width: 9rem;
         height: 9rem;
+
+        &:hover {
+            width: 11rem;
+            height: 11rem;
+        }
     }
 
-    .icon:hover, .icon-card:hover {
+    .icon-card:hover {
         width: 11rem;
         height: 11rem;
     }

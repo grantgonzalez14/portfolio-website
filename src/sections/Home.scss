@@ -14,14 +14,14 @@
 .images {
     background-color: transparent;
     text-align: center;
-}
 
-.images .ps-img {
-    display: inline-block;
-    justify-content: center;
-    width: 160px;
-    height: 160px;
-    margin: 0 4% 10%;
+    .ps-img {
+        display: inline-block;
+        justify-content: center;
+        width: 160px;
+        height: 160px;
+        margin: 0 4% 10%;
+    }
 }
 
 .pictures {
@@ -57,24 +57,20 @@
 }
 
 @media screen and (max-width: 425px) {
-    #backgroundVideo {
-        max-width: none;
-    }
-
     .pictures {
         display: flex;
         flex-direction: column;
         background-color: transparent;
         text-align: center;
         align-items: center;
-    }
 
-    .pictures .g-img {
-        display: inline-block;
-        justify-content: center;
-        width: 50%;
-        height: 50%;
-        margin: 2% 4% 3% 4%;
+        .g-img {
+            display: inline-block;
+            justify-content: center;
+            width: 50%;
+            height: 50%;
+            margin: 2% 4% 3% 4%;
+        }
     }
 
     .left {
