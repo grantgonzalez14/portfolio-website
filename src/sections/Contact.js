@@ -5,7 +5,7 @@ function Contact() {
     return (
         <>
             <section className="contact" id="contact">
-                <div className="contact-form-container" data-aos="fade-down" data-aos-duration="1000">
+                <div className="contact-form-container" data-aos="fade-up" data-aos-duration="1000">
                     <h1>Get In Touch With Me</h1>
                     <div className="contact-form">
                         <form action="https://formspree.io/f/xnqrjaoe" method="POST">

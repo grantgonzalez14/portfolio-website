@@ -5,7 +5,7 @@ function Skills() {
     return (
         <>
             <section className='skills' id='skills'>
-                <h1 className='skill-header' data-aos='fade-down' data-aos-duration='1000'>My Skills</h1>
+                <h1 className='skill-header' data-aos='fade-in' data-aos-duration='1000'>My Skills</h1>
                 <div className='skills-wrapper-large'>
                     <div>
                         <img

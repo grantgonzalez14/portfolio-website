@@ -5,9 +5,9 @@ function Projects() {
     return (
         <>
             <section className='projects' id='projects'>
-                <h1 className='projects-header' data-aos='flip-down' data-aos-duration='1000'>My Projects</h1>
+                <h1 className='projects-header' data-aos='fade-in' data-aos-duration='1000'>My Projects</h1>
                 <div className='projects-container'>
-                    <div className='project-container project-card' data-aos='fade-left' data-aos-duration='1000'>
+                    <div className='project-container project-card' data-aos='fade-up' data-aos-duration='1000'>
                         <div className='project-left'>
                             <img src='assets/images/portfolio-website.png' alt='Portfolio Website' loading='lazy' className='project-pic' />
                         </div>
@@ -25,7 +25,7 @@ function Projects() {
                         </div>
                     </div>
 
-                    <div className='project-container project-card' data-aos='fade-left' data-aos-duration='1000'>
+                    <div className='project-container project-card' data-aos='fade-up' data-aos-duration='1000'>
                         <div className='project-left'>
                             <img src='assets/images/Bug_Zapper_Home_Page.png' alt='Bug Zapper Home Page' loading='lazy' className='project-pic' />
                         </div>
