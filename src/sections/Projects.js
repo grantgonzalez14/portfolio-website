@@ -1,20 +1,34 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { isMobile } from 'react-device-detect';
 import './Projects.scss';
 
 function Projects() {
+    const [mobile, setMobile] = useState(isMobile);
+    
+    useEffect(() => {
+        const handleResize = () => setMobile(window.innerWidth <= 925);
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, [mobile]);
+
     return (
         <>
             <section className='projects' id='projects'>
                 <h1 className='projects-header' data-aos='fade-in' data-aos-duration='1000'>My Projects</h1>
                 <div className='projects-container'>
                     <div className='project-container project-card' data-aos='fade-up' data-aos-duration='1000'>
+                        {!mobile && 
                         <div className='project-left'>
                             <img src='assets/images/portfolio-website.png' alt='Portfolio Website' loading='lazy' className='project-pic' />
-                        </div>
+                        </div>}
                         <div className='project-right'>
                             <h3 className='project-title'><i>Portfolio Website</i></h3>
+                            {mobile && 
+                            <div className='pictures'>
+                                <img src='assets/images/portfolio-website.png' alt='Portfolio Website' loading='lazy' className='project-pic' />
+                            </div>}
                             <p><strong>Made with:</strong>
-                                <img src='assets/icons/icons8-vue-js-48.png' alt='Vue JS' loading='lazy' className='icon' />
+                                <img src='assets/icons/icons8-react-30.png' alt='Vue JS' loading='lazy' className='icon' />
                                 <img src='assets/icons/icons8-javascript.svg' alt='Javascript' loading='lazy' className='icon' />
                                 <img src='assets/icons/icons8-css3.svg' alt='CSS3' loading='lazy' className='icon' />
                                 <img src='assets/icons/icons8-html-5.svg' alt='HTML5' loading='lazy' className='icon' />
@@ -26,11 +40,16 @@ function Projects() {
                     </div>
 
                     <div className='project-container project-card' data-aos='fade-up' data-aos-duration='1000'>
+                        {!mobile && 
                         <div className='project-left'>
                             <img src='assets/images/Bug_Zapper_Home_Page.png' alt='Bug Zapper Home Page' loading='lazy' className='project-pic' />
-                        </div>
+                        </div>}
                         <div className='project-right'>
                             <h3 className='project-title'><i>Bug Zapper</i></h3>
+                            {mobile && 
+                            <div className='pictures'>
+                                <img src='assets/images/Bug_Zapper_Home_Page.png' alt='Portfolio Website' loading='lazy' className='project-pic' />
+                            </div>}
                             <p><strong>Made with:</strong>
                                 <img src='assets/icons/icons8-react-30.png' alt='React' loading='lazy' className='icon' />
                                 <img src='assets/icons/icons8-javascript.svg' alt='Javascript' loading='lazy' className='icon' />

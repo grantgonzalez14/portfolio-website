@@ -13,8 +13,6 @@ function Skills() {
                             alt='HTML5'
                             loading='lazy'
                             className='icon icon-card'
-                            data-aos='zoom-in'
-                            data-aos-duration='1000'
                             id='html'
                         />
                         <img
@@ -22,8 +20,6 @@ function Skills() {
                             alt='CSS3'
                             loading='lazy'
                             className='icon icon-card'
-                            data-aos='zoom-in'
-                            data-aos-duration='1000'
                             id='css'
                         />
                         <img
@@ -31,8 +27,6 @@ function Skills() {
                             alt='JavaScript'
                             loading='lazy'
                             className='icon icon-card'
-                            data-aos='zoom-in'
-                            data-aos-duration='1000'
                             id='javascript'
                         />
                         <img
@@ -40,8 +34,6 @@ function Skills() {
                             alt='Python'
                             loading='lazy'
                             className='icon icon-card'
-                            data-aos='zoom-in'
-                            data-aos-duration='1000'
                             id='python'
                         />
                     </div>
@@ -51,8 +43,6 @@ function Skills() {
                             alt='C++'
                             loading='lazy'
                             className='icon icon-card'
-                            data-aos='zoom-in'
-                            data-aos-duration='1000'
                             id='cpp'
                         />
                         <img
@@ -60,8 +50,6 @@ function Skills() {
                             alt='C'
                             loading='lazy'
                             className='icon icon-card'
-                            data-aos='zoom-in'
-                            data-aos-duration='1000'
                             id='c'
                         />
                         <img
@@ -69,8 +57,6 @@ function Skills() {
                             alt='Java'
                             loading='lazy'
                             className='icon icon-card'
-                            data-aos='zoom-in'
-                            data-aos-duration='1000'
                             id='java'
                         />
                         <img
@@ -78,8 +64,6 @@ function Skills() {
                             alt='MySQL'
                             loading='lazy'
                             className='icon icon-card'
-                            data-aos='zoom-in'
-                            data-aos-duration='1000'
                             id='mysql'
                         />
                     </div>
@@ -89,8 +73,6 @@ function Skills() {
                             alt='Git'
                             loading='lazy'
                             className='icon icon-card'
-                            data-aos='zoom-in'
-                            data-aos-duration='1000'
                             id='git'
                         />
                         <img
@@ -98,8 +80,6 @@ function Skills() {
                             alt='Vue JS'
                             loading='lazy'
                             className='icon icon-card'
-                            data-aos='zoom-in'
-                            data-aos-duration='1000'
                             id='vue'
                         />
                         <img
@@ -107,8 +87,6 @@ function Skills() {
                             alt='React'
                             loading='lazy'
                             className='icon icon-card'
-                            data-aos='zoom-in'
-                            data-aos-duration='1000'
                             id='react'
                         />
                         <img
@@ -116,8 +94,6 @@ function Skills() {
                             alt='Flask'
                             loading='lazy'
                             className='icon icon-card'
-                            data-aos='zoom-in'
-                            data-aos-duration='1000'
                             id='flask'
                         />
                     </div>

@@ -65,7 +65,13 @@
     }
 }
 
+@media screen and (max-width: 925px) {
+    .contact { margin-left: 5rem; }
+}
+
 @media screen and (max-width: 425px) {
+    .contact { margin-left: 0; }
+
     .contact-form-container {
         width: 80%;
         margin-top: 15%;

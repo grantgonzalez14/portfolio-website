@@ -23,7 +23,7 @@ function App() {
 			<Parallax pages={6} ref={pref}>
 				<ParallaxLayer offset={0} speed={0.5} factor={12}  className='parallax'/>
 				
-				<ParallaxLayer offset={0} speed={1}>
+				<ParallaxLayer offset={0} speed={1} style={{overflow: 'scroll'}}>
 					<Element name='Home'>
 						<Home />
 					</Element>
@@ -41,7 +41,7 @@ function App() {
 					</Element>
 				</ParallaxLayer>
 				
-				<ParallaxLayer offset={3} speed={1} className='layer'>
+				<ParallaxLayer offset={3} speed={1} className='layer skills-layer'>
 					<Element name='Skills'>
 						<Skills />
 					</Element>

@@ -42,6 +42,8 @@
 }
 
 @media screen and (max-width: 925px) {
+    .skills { margin-left: 5rem; }
+
     .icon {
         width: 9rem;
         height: 9rem;
@@ -56,4 +58,8 @@
         width: 11rem;
         height: 11rem;
     }
+}
+
+@media screen and (max-width: 425px) {
+    .skills { margin-left: 0; }
 }

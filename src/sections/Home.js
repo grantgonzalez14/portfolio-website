@@ -1,11 +1,20 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { isMobile } from 'react-device-detect';
 import './Home.scss';
 
 function Home() {
     const data_aos_animation_time = 2000;
+    const [mobile, setMobile] = useState(isMobile);
+    
+    useEffect(() => {
+        const handleResize = () => setMobile(window.innerWidth <= 925);
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, [mobile]);
 
     return (
         <>
+            {!mobile && 
             <div className='pictures'>
                 <div className='up'>
                     <img src='assets/images/GatSeattleLake.jpeg' alt='Grant Ring Ceremony' loading='lazy' data-aos='fade-up' data-aos-duration={data_aos_animation_time} className='g-img' />
@@ -22,7 +31,7 @@ function Home() {
                 <div className='up'>
                     <img src='assets/images/GatQ.jpeg' alt='Grant Ring Ceremony' loading='lazy' data-aos='fade-up' data-aos-duration={data_aos_animation_time} className='g-img' />
                 </div>
-            </div>
+            </div>}
             <div className='bio' data-aos='zoom-in' data-aos-duration={data_aos_animation_time}>
                 <h1 className='title'>Grant Gonzalez - Software Developer</h1>
                 <h2 className='about-me'>

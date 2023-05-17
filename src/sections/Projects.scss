@@ -97,6 +97,8 @@
 }
 
 @media screen and (max-width: 925px) {
+    .projects { margin-left: 5rem; }
+
     .project-right {
         width: 90%;
 
@@ -117,4 +119,8 @@
     .project-title {
         text-align: center;
     }
+}
+
+@media screen and (max-width: 425px) {
+    .projects { margin-left: 0; }
 }
