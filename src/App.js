@@ -9,45 +9,58 @@ import Projects from './sections/Projects';
 import Contact from './sections/Contact';
 import { Element } from 'react-scroll';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
+import { useRef } from 'react';
 
 function App() {
 	Aos.init();
 
+	let pref = useRef();
+	let scroll = (to) => {pref.current.scrollTo(to)};
+
 	return (
 		<>
-			<Navbar />
-			<Parallax pages={6}>
-				<ParallaxLayer offset={0} speed={0.5} factor={12} className='parallax'/>
-				<Element name='Home'>
-					<ParallaxLayer offset={0} speed={1}>
+			<Navbar scrollFunction={scroll}/>
+			<Parallax pages={6} ref={pref}>
+				
+				<ParallaxLayer offset={0} speed={0.5} factor={12}  className='parallax'>
+					
+				</ParallaxLayer>
+				
+				<ParallaxLayer offset={0} speed={1}>
+					<Element className='element' name='Home'>
 						<Home />
-					</ParallaxLayer>
-				</Element>
-				<Element name='About'>
-					<ParallaxLayer offset={1} speed={1}>
-						<About />
-					</ParallaxLayer>
-				</Element>
-				<Element name='Education'>
-					<ParallaxLayer offset={2} speed={1}>
+					</Element>
+				</ParallaxLayer>
+				
+				<ParallaxLayer offset={1} speed={1}>
+					<Element className='element' name='About'>
+						<About id='About'/>
+					</Element>
+				</ParallaxLayer>
+				
+				<ParallaxLayer offset={2} speed={1}>
+					<Element className='element' name='Education'>					
 						<Education />
-					</ParallaxLayer>
-				</Element>
-				<Element name='Skills'>
-					<ParallaxLayer offset={3} speed={1}>
+					</Element>
+				</ParallaxLayer>
+				
+				<ParallaxLayer offset={3} speed={1}>
+					<Element className='element' name='Skills'>
 						<Skills />
-					</ParallaxLayer>
-				</Element>
-				<Element name='Projects'>
-					<ParallaxLayer offset={4} speed={1}>
+					</Element>
+				</ParallaxLayer>
+				
+				<ParallaxLayer offset={4} speed={1}>
+					<Element className='element' name='Projects'>
 						<Projects />
-					</ParallaxLayer>
-				</Element>
-				<Element name='Contact'>
-					<ParallaxLayer offset={5} speed={1}>
+					</Element>
+				</ParallaxLayer>
+
+				<ParallaxLayer offset={5} speed={1}>
+					<Element className='element' name='Contact'>
 						<Contact />
-					</ParallaxLayer>
-				</Element>
+					</Element>
+				</ParallaxLayer>
 			</Parallax>
 
 			{/* <div className='app-container'>

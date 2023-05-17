@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-scroll';
 import './Navbar.scss';
 
-function Navbar() {
+function Navbar({scrollFunction}) {
     return (
         <>
             <nav className='navbar'>
@@ -14,6 +14,7 @@ function Navbar() {
                             smooth={true}
                             duration={0}
                             className='nav-link'
+                            onClick={() => scrollFunction(0)}
                         >
                             <span className='link-text logo-text'><img src='assets/images/GGLogo.png' alt='Grant Gonzalez Logo' className='logo-img'/></span>
                             <svg
@@ -49,6 +50,7 @@ function Navbar() {
                             smooth={true}
                             duration={0}
                             className='nav-link'
+                            onClick={() => scrollFunction(0)}
                         >
                             <svg 
                                 aria-hidden='true'
@@ -76,6 +78,7 @@ function Navbar() {
                             smooth={true}
                             duration={0}
                             className='nav-link'
+                            onClick={() => scrollFunction(1)}
                         >
                             <svg 
                                 aria-hidden='true'
@@ -103,6 +106,7 @@ function Navbar() {
                             smooth={true}
                             duration={0}
                             className='nav-link'
+                            onClick={() => scrollFunction(2)}
                         >
                             <svg 
                                 aria-hidden='true'
@@ -130,6 +134,7 @@ function Navbar() {
                             smooth={true}
                             duration={0}
                             className='nav-link'
+                            onClick={() => scrollFunction(3)}
                         >
                             <svg 
                                 aria-hidden='true'
@@ -157,6 +162,7 @@ function Navbar() {
                             smooth={true}
                             duration={0}
                             className='nav-link'
+                            onClick={() => scrollFunction(4)}
                         >
                             <svg 
                                 aria-hidden='true'
@@ -184,6 +190,7 @@ function Navbar() {
                             smooth={true}
                             duration={0}
                             className='nav-link'
+                            onClick={() => scrollFunction(5)}
                         >
                             <svg 
                                 aria-hidden='true'
