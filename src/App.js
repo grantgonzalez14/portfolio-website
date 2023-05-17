@@ -23,7 +23,7 @@ function App() {
 			<Parallax pages={6} ref={pref}>
 				<ParallaxLayer offset={0} speed={0.5} factor={12}  className='parallax'/>
 				
-				<ParallaxLayer offset={0} speed={1} className='layer'>
+				<ParallaxLayer offset={0} speed={1}>
 					<Element name='Home'>
 						<Home />
 					</Element>

@@ -1,7 +1,16 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { isMobile } from 'react-device-detect';
 import './About.scss';
 
 function About() {
+    const [mobile, setMobile] = useState(isMobile);
+    
+    useEffect(() => {
+        const handleResize = () => setMobile(window.innerWidth <= 925);
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, [mobile]);
+
     return (
         <>
             <section className='about'>
@@ -13,11 +22,17 @@ function About() {
                             Chair in the past. I'm currently looking to start my career as a software engineer!</p>
                     </div>
                     <br/><br/>
-
-                    <div className='previous-experience'>
-                        <div className='experience-header'>
+                    {mobile && 
+                    <div className='experience-header'>
                         <h2>Experience</h2>
+                    </div>
+                    }
+                    <div className='previous-experience'>
+                        {!mobile && 
+                        <div className='experience-header'>
+                            <h2>Experience</h2>
                         </div>
+                        }
                         <div className='qualtrics'>
                             <p><i><strong>Qualtrics - Software Test Engineer Intern</strong></i></p><br/>
                             <ul style={{'listStyleType':'disc'}}>
