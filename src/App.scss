@@ -62,6 +62,9 @@
     );
 }
 
-.element {
-  height: 100;
+.layer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
