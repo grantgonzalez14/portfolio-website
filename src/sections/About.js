@@ -17,9 +17,9 @@ function About() {
                 <div className='about-container' data-aos='fade-up' data-aos-duration='1000'>
                     <h1 className='about-header'>About Me</h1>
                     <div className='bio'>
-                        <p>I'm Grant! I'm a recent computer science graduate from Clemson University.
-                            I'm an alumni member of Theta Chi fraternity and have held the executive position of Scholarship
-                            Chair in the past. I'm currently looking to start my career as a software engineer!</p>
+                        <p>I'm Grant! I'm currently working as a software developer in the Indianapolis area I'm a recent 
+                            computer science graduate from Clemson University. I'm an alumni member of Theta Chi fraternity 
+                            and have held the executive position of Scholarship Chair in the past.</p>
                     </div>
                     <br/><br/>
                     {mobile && 

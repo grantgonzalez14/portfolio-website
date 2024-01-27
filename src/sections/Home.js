@@ -35,18 +35,15 @@ function Home() {
             <div className='bio' data-aos='zoom-in' data-aos-duration={data_aos_animation_time}>
                 <h1 className='title'>Grant Gonzalez - Software Developer</h1>
                 <h2 className='about-me'>
-                    Hi, I'm Grant! I'm a software developer that specializes in front-end web development!
-                    I'm a results-driven web developer with a passion for creating engaging, interactive, and visually
-                    appealing websites. With a deep understanding of web development principles and experience with
-                    front-end technologies such as Vue, React, JavaScript, Python, HTML, and CSS, I specialize in bringing
-                    complex ideas to life in a simple, effective way. <br/><br/>
-                    I believe that great web development requires more than just technical expertise. It also requires a
+                    Hi, I'm Grant! Welcome to my website! I'm an application developer and consultant at <a href='www.dbservices.com' className='db-link'>DB Services</a> that 
+                    specializes full-stack development! I'm a results-driven developer with a passion for creating engaging, 
+                    interactive, and visually appealing applications. With a deep understanding of database management principles and experience with
+                    technologies such as FileMaker, Claris Studio, Claris Server I specialize in bringing
+                    complex ideas to life in a simple, intuitive, and effective way. <br/><br/>
+                    I believe that great development requires more than just technical expertise. It also requires a
                     deep understanding of user experience, design principles, and the ability to work collaboratively with
                     clients and team members. That's why I'm committed to staying up-to-date with the latest trends and best
-                    practices in web development, and I'm always looking for new opportunities to learn and grow. <br/><br/>
-                    If you're looking for a web developer who is passionate about creating high-quality, user-focused solutions,
-                    I'd love to hear from you! Let's work together to create a website that truly stands out in today's crowded
-                    digital landscape.
+                    practices in full-stack development, and I'm always looking for new opportunities to learn and grow.
                 </h2>
             </div>
         </>
