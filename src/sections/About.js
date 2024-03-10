@@ -53,6 +53,17 @@ function About() {
                                 determine appropriate team to consult for resolving issue.</li>
                             </ul>
                         </div>
+                        <div className='eleos'>
+                            <p><i><strong>DB Services - Application Developer</strong></i></p><br/>
+                            <ul style={{'listStyleType':'disc'}}>
+                                <li>Tests functionality, performance and compliance of each product against design specifications to maintain strong
+                                development standards and high customer satisfaction.</li><br/>
+                                <li>Searches for bugs in newly-developed aspects of existing web applications in sandbox environments, reporting
+                                errors to deliver complete functionality.</li><br/>
+                                <li>Collaborates with developers, system installers and technical support representatives in identifying errors to
+                                determine appropriate team to consult for resolving issue.</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </section>
