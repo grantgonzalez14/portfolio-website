@@ -1,5 +1,5 @@
 import React from 'react';
-import './Education.scss';
+import '../css/Education.scss';
 
 function Education() {
     return (

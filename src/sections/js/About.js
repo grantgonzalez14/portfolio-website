@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { isMobile } from 'react-device-detect';
-import './About.scss';
+import '../css/About.scss';
 
 function About() {
     const [mobile, setMobile] = useState(isMobile);

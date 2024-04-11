@@ -67,6 +67,25 @@
     padding-bottom: 7%;
 }
 
+.joke-button {
+    padding: 8px 20px;
+    border-radius: 2px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    margin: 0 5px;
+    font-size: 20px;
+    color: white;
+    border: 1px solid white;
+}
+
+.joke-button:hover {
+    transition: all 0.2s ease-out;
+    color: #242424;
+    background: white;
+}
+
 @media screen and (max-width: 425px) {
     .pictures {
         display: flex;
