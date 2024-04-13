@@ -27,27 +27,39 @@ function App() {
 				{/* Background Image Layers */}
 				<ParallaxLayer offset={0} speed={0} factor={12} className='stars' style={{backgroundRepeat: 'repeat', zIndex: 2, top: 0}} />
 				<ParallaxLayer offset={0} speed={0.5} factor={12} className='parallax' style={{ zIndex: 1 }}/>
-				<ParallaxLayer offset={5.25} speed={-0.4} className='earth' style={{zIndex: 3, backgroundSize: 'cover'}} />
+				<ParallaxLayer offset={5.5} speed={-0.4} className='earth' style={{zIndex: 3, backgroundSize: 'cover', marginLeft: '3rem'}}/>
 				<ParallaxLayer offset={1.25} speed={-0.3} className='satelliteOne' style={{zIndex: 3, display: 'block', marginLeft: '87%', backgroundSize: '360px 360px'}} />
 				<ParallaxLayer offset={2.5} speed={-0.3} className='satelliteTwo' style={{zIndex: 3, display: 'block', marginLeft: '3%', backgroundSize: '360px 360px'}} />
-				<ParallaxLayer offset={3.75} speed={-0.3} className='satelliteThree' style={{zIndex: 3, display: 'block', marginLeft: '87%'}} />
+				<ParallaxLayer offset={3.75} speed={-0.3} className='satelliteThree' style={{zIndex: 3, display: 'block', marginLeft: '85%', backgroundSize: '360px'}} />
 
+				<ParallaxLayer offset={5.52} speed={0.5} className='astronautCharacter' style={{zIndex: 4, display: 'block', marginLeft: '13%', backgroundSize: '150px'}} />
+				<ParallaxLayer offset={5.5} speed={0.5} className='rocketShip' style={{zIndex: 4, display: 'block', marginLeft: '18%', backgroundSize: '100px'}} />
+
+				{/* ---------- CLOUDS ---------- */}
 				{/* Bottom Right */}
-				<ParallaxLayer offset={5.5} speed={-0.4} className='cloud' style={{zIndex: 3, display: 'block', marginLeft: '77%'}} />
+				<ParallaxLayer offset={5.5} speed={-0.4} className='cloud' style={{zIndex: 3, display: 'block', marginLeft: '77%', opacity: '0.4'}} />
+				<ParallaxLayer offset={5.5} speed={-0.4} className='cloud' style={{zIndex: 3, display: 'block', marginLeft: '75%', backgroundSize: '15%'}} />
 				{/* Top Right */}
-				<ParallaxLayer offset={5.1} speed={-0.26} className='cloud' style={{zIndex: 3, display: 'block', marginLeft: '67%'}} />
+				<ParallaxLayer offset={5.1} speed={-0.26} className='cloud' style={{zIndex: 3, display: 'block', marginLeft: '67%', opacity: '0.4'}} />
+				<ParallaxLayer offset={5.1} speed={-0.26} className='cloud' style={{zIndex: 3, display: 'block', marginLeft: '65%', backgroundSize: '15%'}} />
 				{/* Second to Bottom Right */}
-				<ParallaxLayer offset={5.3} speed={-0.23} className='cloud' style={{zIndex: 3, display: 'block', marginLeft: '55%'}} />
+				<ParallaxLayer offset={5.3} speed={-0.23} className='cloud' style={{zIndex: 3, display: 'block', marginLeft: '55%', opacity: '0.4'}} />
+				<ParallaxLayer offset={5.3} speed={-0.23} className='cloud' style={{zIndex: 3, display: 'block', marginLeft: '53%', backgroundSize: '15%'}} />
 				{/* Top Middle */}
-				<ParallaxLayer offset={5} speed={-0.2} className='cloud' style={{zIndex: 3, display: 'block', marginLeft: '47%'}} />
+				<ParallaxLayer offset={5} speed={-0.2} className='cloud' style={{zIndex: 3, display: 'block', marginLeft: '47%', opacity: '0.4'}} />
+				<ParallaxLayer offset={5} speed={-0.2} className='cloud' style={{zIndex: 3, display: 'block', marginLeft: '45%', backgroundSize: '15%'}} />
 				{/* Bottom Middle */}
-				<ParallaxLayer offset={5.25} speed={-0.23} className='cloud' style={{zIndex: 3, display: 'block', marginLeft: '37%'}} />
+				<ParallaxLayer offset={5.25} speed={-0.23} className='cloud' style={{zIndex: 3, display: 'block', marginLeft: '37%', opacity: '0.4'}} />
+				<ParallaxLayer offset={5.25} speed={-0.23} className='cloud' style={{zIndex: 3, display: 'block', marginLeft: '35%', backgroundSize: '15%'}} />
 				{/* Top Left */}
-				<ParallaxLayer offset={5.05} speed={-0.26} className='cloud' style={{zIndex: 3, display: 'block', marginLeft: '27%'}} />
+				<ParallaxLayer offset={5.05} speed={-0.26} className='cloud' style={{zIndex: 3, display: 'block', marginLeft: '27%', opacity: '0.4'}} />
+				<ParallaxLayer offset={5.05} speed={-0.26} className='cloud' style={{zIndex: 3, display: 'block', marginLeft: '25%', backgroundSize: '15%'}} />
 				{/* Second to bottom left */}
-				<ParallaxLayer offset={5.35} speed={-0.23} className='cloud' style={{zIndex: 3, display: 'block', marginLeft: '19%'}} />
+				<ParallaxLayer offset={5.35} speed={-0.23} className='cloud' style={{zIndex: 3, display: 'block', marginLeft: '19%', opacity: '0.4'}} />
+				<ParallaxLayer offset={5.35} speed={-0.23} className='cloud' style={{zIndex: 3, display: 'block', marginLeft: '17%', backgroundSize: '15%'}} />
 				{/* Bottom Left */}
-				<ParallaxLayer offset={5.55} speed={-0.4} className='cloud' style={{zIndex: 3, display: 'block', marginLeft: '7%'}} />
+				<ParallaxLayer offset={5.55} speed={-0.4} className='cloud' style={{zIndex: 3, display: 'block', marginLeft: '7%', opacity: '0.4'}} />
+				<ParallaxLayer offset={5.55} speed={-0.4} className='cloud' style={{zIndex: 3, display: 'block', marginLeft: '5%', backgroundSize: '15%'}} />
 				
 				{/* Element Layers */}
 				<ParallaxLayer offset={0} speed={1} style={{overflow: 'scroll', zIndex: 3}}>
