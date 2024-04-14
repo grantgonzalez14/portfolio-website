@@ -45,23 +45,37 @@ function About() {
                         <div className='eleos'>
                             <p><i><strong>Eleos Technologies - Software QA Analyst</strong></i></p><br/>
                             <ul style={{'listStyleType':'disc'}}>
-                                <li>Tests functionality, performance and compliance of each product against design specifications to maintain strong
-                                development standards and high customer satisfaction.</li><br/>
-                                <li>Searches for bugs in newly-developed aspects of existing web applications in sandbox environments, reporting
-                                errors to deliver complete functionality.</li><br/>
-                                <li>Collaborates with developers, system installers and technical support representatives in identifying errors to
-                                determine appropriate team to consult for resolving issue.</li>
+                                <li>
+                                    Tested functionality, performance and compliance of each product against design specifications to maintain strong
+                                    development standards and high customer satisfaction.
+                                </li><br/>
+                                <li>
+                                    Searched for bugs in newly-developed aspects of existing web applications in sandbox environments, reporting
+                                    errors to deliver complete functionality.
+                                </li><br/>
+                                <li>
+                                    Collaborated with developers, system installers and technical support representatives in identifying errors to
+                                    determine appropriate team to consult for resolving issue.
+                                </li>
                             </ul>
                         </div>
                         <div className='eleos'>
                             <p><i><strong>DB Services - Application Developer</strong></i></p><br/>
                             <ul style={{'listStyleType':'disc'}}>
-                                <li>Tests functionality, performance and compliance of each product against design specifications to maintain strong
-                                development standards and high customer satisfaction.</li><br/>
-                                <li>Searches for bugs in newly-developed aspects of existing web applications in sandbox environments, reporting
-                                errors to deliver complete functionality.</li><br/>
-                                <li>Collaborates with developers, system installers and technical support representatives in identifying errors to
-                                determine appropriate team to consult for resolving issue.</li>
+                                <li>
+                                    Develop custom FileMaker solutions for clients, leveraging advanced scripting, layout design, and 
+                                    database management techniques to create intuitive and efficient applications.
+                                </li><br/>
+                                <li>
+                                    Implemented API integrations to enhance functionality and connectivity, seamlessly integrating third-party 
+                                    services such as Stripe payment gateways, BackBlaze cloud photo storage, and Amazon selling partner services
+                                    platforms into FileMaker solutions.
+                                </li><br/>
+                                <li>
+                                    Contributed to the development lifecycle of FileMaker projects, from initial concept to deployment, ensuring 
+                                    adherence to project timelines, budget constraints, and quality standards, while actively communicating with 
+                                    stakeholders to gather feedback and refine solutions as needed.
+                                </li>
                             </ul>
                         </div>
                     </div>

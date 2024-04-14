@@ -39,43 +39,6 @@ function Skills() {
                     </div>
                     <div>
                         <img
-                            src='assets/icons/icons8-c++.svg'
-                            alt='C++'
-                            loading='lazy'
-                            className='icon icon-card'
-                            id='cpp'
-                        />
-                        <img
-                            src='assets/icons/icons8-c-programming.svg'
-                            alt='C'
-                            loading='lazy'
-                            className='icon icon-card'
-                            id='c'
-                        />
-                        <img
-                            src='assets/icons/icons8-java.svg'
-                            alt='Java'
-                            loading='lazy'
-                            className='icon icon-card'
-                            id='java'
-                        />
-                        <img
-                            src='assets/icons/icons8-mysql-logo-144.png'
-                            alt='MySQL'
-                            loading='lazy'
-                            className='icon icon-card'
-                            id='mysql'
-                        />
-                    </div>
-                    <div>
-                        <img
-                            src='assets/icons/icons8-git.svg'
-                            alt='Git'
-                            loading='lazy'
-                            className='icon icon-card'
-                            id='git'
-                        />
-                        <img
                             src='assets/icons/icons8-vue-js-144.png'
                             alt='Vue JS'
                             loading='lazy'
@@ -90,11 +53,48 @@ function Skills() {
                             id='react'
                         />
                         <img
-                            src='assets/icons/icons8-flask-100.png'
-                            alt='Flask'
+                            src='assets/icons/FileMakerProIcon.png'
+                            alt='FileMaker Pro'
                             loading='lazy'
                             className='icon icon-card'
-                            id='flask'
+                            id='fmp'
+                        />
+                        <img
+                            src='assets/icons/FigmaIcon.png'
+                            alt='Figma'
+                            loading='lazy'
+                            className='icon icon-card'
+                            id='figma'
+                        />
+                    </div>
+                    <div>
+                        <img
+                            src='assets/icons/icons8-git.svg'
+                            alt='Git'
+                            loading='lazy'
+                            className='icon icon-card'
+                            id='git'
+                        />
+                        <img
+                            src='assets/icons/icons8-c++.svg'
+                            alt='C++'
+                            loading='lazy'
+                            className='icon icon-card'
+                            id='cpp'
+                        />
+                        <img
+                            src='assets/icons/icons8-c-programming.svg'
+                            alt='C'
+                            loading='lazy'
+                            className='icon icon-card'
+                            id='c'
+                        />
+                        <img
+                            src='assets/icons/PostmanIcon.png'
+                            alt='Postman'
+                            loading='lazy'
+                            className='icon icon-card'
+                            id='postman'
                         />
                     </div>
                 </div>

@@ -47,10 +47,12 @@
 
 .db-link {
     color: white;
-}
 
-.db-link:hover {
-    color: rgb(21 20 62 / 1);
+    &:hover {
+        color: #56A4B8;
+        cursor: pointer;
+        transition: 250ms;
+    }
 }
 
 .up {

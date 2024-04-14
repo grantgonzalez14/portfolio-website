@@ -81,10 +81,10 @@ function Home() {
             <div className='bio' data-aos='zoom-in' data-aos-duration={data_aos_animation_time}>
                 <h1 className='title'>Grant Gonzalez - Software Developer</h1>
                 <h2 className='about-me'>
-                    Hi, I'm Grant! Welcome to my website! I'm an application developer and consultant at <a href='www.dbservices.com' className='db-link'>DB Services</a> that 
+                    Hi, I'm Grant! Welcome to my website! I'm an application developer and consultant at <a href='https://www.dbservices.com' target='__blank' className='db-link'>DB Services</a> that 
                     specializes full-stack development! I'm a results-driven developer with a passion for creating engaging, 
                     interactive, and visually appealing applications. With a deep understanding of database management principles and experience with
-                    technologies such as FileMaker, Claris Studio, Claris Server I specialize in bringing
+                    technologies such as FileMaker, Claris Studio, Claris Connect, and Claris Server I specialize in bringing
                     complex ideas to life in a simple, intuitive, and effective way. <br/><br/>
                     I believe that great development requires more than just technical expertise. It also requires a
                     deep understanding of user experience, design principles, and the ability to work collaboratively with
