@@ -3,7 +3,6 @@
     place-items: center;
     max-width: 80%;
     margin: 1rem auto;
-    clear: both;
 }
 
 .about-header {
@@ -52,12 +51,6 @@
     place-items: flex-start;
 }
 
-// .about-container .previous-experience .qualtrics {
-//     width: auto;
-//     display: flex;
-//     flex-direction: column;
-// }
-
 .about-container .previous-experience .qualtrics,
 .about-container .previous-experience .eleos,
 .about-container .previous-experience .db-services {
@@ -97,16 +90,11 @@
     .about-container {
         max-width: 40rem;
         margin-left: 5rem;
-
-        // .experience-header {
-        //     width: 100%;
-        //     justify-content: center;
-        // }
     }
 
-    .bio {
-        margin: 0 8%;
-    }
+    // .bio {
+    //     margin: 0 8%;
+    // }
 }
 
 @media screen and (max-width: 425px) {

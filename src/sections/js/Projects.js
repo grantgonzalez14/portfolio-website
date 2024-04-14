@@ -19,7 +19,7 @@ function Projects() {
                     <div className='project-container project-card' data-aos='fade-up' data-aos-duration='1000'>
                         {!mobile && 
                         <div className='project-left'>
-                            <img src='assets/images/portfolio-website.png' alt='Portfolio Website' loading='lazy' className='project-pic' />
+                            <img src='assets/images/Website.png' alt='Portfolio Website' loading='lazy' className='project-pic' />
                         </div>}
                         <div className='project-right'>
                             <h3 className='project-title'><i>Portfolio Website</i></h3>
