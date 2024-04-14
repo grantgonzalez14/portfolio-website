@@ -15,12 +15,18 @@ function Education() {
                             <img src='../assets/images/clemson-tigers.webp' alt='Clemson Tigers' loading='lazy' className='clemson-images' />
                         </div>
                         <div className='education-info'>
-                            <h3>School:<p>&nbsp;Clemson University</p></h3>
-                            <h3>Degree:<p>&nbsp;B.S. Computer Science</p></h3>
-                            <h3>GPA:<p>&nbsp;3.47</p></h3>
-                            <h3>President's List:<p>&nbsp;Spring 2022</p></h3>
-                            <h3>Dean's List:<p>&nbsp;Fall 2021, Spring 2023</p></h3>
-                            <h3>Extracurriculars:&nbsp;<p>Theta Chi Fraternity</p></h3>
+                            <h3>School:{window.innerWidth >= 425 && <p>&nbsp;Clemson University</p>}</h3>
+                            {window.innerWidth < 425 && <p>&nbsp;Clemson University</p> }
+                            <h3>Degree:{window.innerWidth >= 425 && <p>&nbsp;B.S. Computer Science</p>}</h3>
+                            {window.innerWidth < 425 && <p>&nbsp;B.S. Computer Science</p>}
+                            <h3>GPA:{window.innerWidth >= 425 && <p>&nbsp;3.47</p>}</h3>
+                            {window.innerWidth < 425 && <p>&nbsp;3.47</p>}
+                            <h3>President's List:{window.innerWidth >= 425 && <p>&nbsp;Spring 2022</p>}</h3>
+                            {window.innerWidth < 425 && <p>&nbsp;Spring 2022</p>}
+                            <h3>Dean's List:{window.innerWidth >= 425 && <p>&nbsp;Fall 2021, Spring 2023</p>}</h3>
+                            {window.innerWidth < 425 && <p>&nbsp;Fall 2021, Spring 2023</p>}
+                            <h3>Extracurriculars:{window.innerWidth >= 425 && <p>&nbsp;Theta Chi Fraternity</p>}</h3>
+                            {window.innerWidth < 425 && <p>&nbsp;Theta Chi Fraternity</p>}
                         </div>
                     </div>
                 </div>

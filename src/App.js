@@ -175,7 +175,7 @@ function App() {
 					top: (isVerticalLayout && windowWidth > 600 ? (windowHeight - windowWidth) : (isVerticalLayout && windowWidth <= 600 ? (windowHeight - windowWidth) / 2 : 0) ),
 					left: (isVerticalLayout && windowWidth > 600 ? '14%' : '3rem')
 				}
-			};
+			}
 			setPosition(newPositions);
 		};
 
@@ -186,7 +186,7 @@ function App() {
 		
 		window.addEventListener('resize', handleResize);
 		return () => window.removeEventListener('resize', handleResize);
-	}, [windowWidth, windowHeight, isVerticalLayout]);
+	}, [windowWidth, windowHeight, isVerticalLayout, ]);
 
 	return (
 		<>
@@ -229,7 +229,7 @@ function App() {
 				<ParallaxLayer offset={5.55} speed={-0.4} className='cloud' style={{zIndex: 3, display: 'block', marginLeft: '5%', backgroundSize: '15%'}} />
 				
 				{/* Element Layers */}
-				<ParallaxLayer offset={0} speed={1} style={{overflow: 'scroll', zIndex: 3}}>
+				<ParallaxLayer offset={0} speed={1}  style={{ overflow: 'scroll', zIndex: 3 }}>
 					<Element name='Home'>
 						<Home />
 					</Element>
