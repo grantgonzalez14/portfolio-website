@@ -16,8 +16,6 @@
 
 .about-container {
     background-color: white;
-    // max-width: 100%;
-    height: 30rem;
     margin: 1% auto;
     padding: 0.938rem;
     border-radius: 5px;
@@ -32,13 +30,10 @@
     }
 }
 
-.about-container .previous-experience .experience-header {
-    width: 12%;
-    margin-left: 4%;
-}
-
-.experience-header {
+.about-container .experience-header {
     font-family: "Montserrat", "serif";
+    width: 100%;
+    justify-content: center;
 }
 
 .about-container .bio {
@@ -49,29 +44,38 @@
 
 
 .about-container .previous-experience {
-    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     place-items: flex-start;
 }
 
-.about-container .previous-experience .qualtrics {
-    width: 35%;
-    display: flex;
-    flex-direction: column;
-}
+// .about-container .previous-experience .qualtrics {
+//     width: auto;
+//     display: flex;
+//     flex-direction: column;
+// }
 
-.about-container .previous-experience .eleos {
-    width: 35%;
+.about-container .previous-experience .qualtrics,
+.about-container .previous-experience .eleos,
+.about-container .previous-experience .db-services {
+    width: auto;
     margin-left: 5px;
     display: flex;
     flex-direction: column;
 }
 
-.about-container .previous-experience .qualtrics p, .about-container .previous-experience .eleos p {
+.about-container .previous-experience .qualtrics p, 
+.about-container .previous-experience .eleos p,
+.about-container .previous-experience .db-services p {
     margin-left: 3rem;
     font-family: "Montserrat", "serif";
 }
 
-.about-container .previous-experience .qualtrics ul, .about-container .previous-experience .eleos ul {
+.about-container .previous-experience .qualtrics ul, 
+.about-container .previous-experience .eleos ul,
+.about-container .previous-experience .db-services ul {
     margin-left: 1rem;
     font-family: "Montserrat","serif";
     font-size: 14px;
@@ -93,10 +97,10 @@
         max-width: 40rem;
         margin-left: 5rem;
 
-        .experience-header {
-            width: 100%;
-            justify-content: center;
-        }
+        // .experience-header {
+        //     width: 100%;
+        //     justify-content: center;
+        // }
     }
 
     .bio {
@@ -118,11 +122,15 @@
         width: auto;
     }
 
-    .about-container .previous-experience .qualtrics p {
+    .about-container .previous-experience .qualtrics p,
+    .about-container .previous-experience .qualtrics p, 
+    .about-container .previous-experience .eleos p {
         margin-left: 1rem;
     }
 
-    .about-container .previous-experience .qualtrics ul {
+    .about-container .previous-experience .qualtrics ul,
+    .about-container .previous-experience .eleos ul,
+    .about-container .previous-experience .db-services ul {
         margin-left: -1rem;
     }
 }

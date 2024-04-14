@@ -22,17 +22,12 @@ function About() {
                             and have held the executive position of Scholarship Chair in the past.</p>
                     </div>
                     <br/><br/>
-                    {mobile && 
+                    
                     <div className='experience-header'>
                         <h2>Experience</h2>
                     </div>
-                    }
+                    
                     <div className='previous-experience'>
-                        {!mobile && 
-                        <div className='experience-header'>
-                            <h2>Experience</h2>
-                        </div>
-                        }
                         <div className='qualtrics'>
                             <p><i><strong>Qualtrics - Software Test Engineer Intern</strong></i></p><br/>
                             <ul style={{'listStyleType':'disc'}}>
@@ -59,7 +54,7 @@ function About() {
                                 </li>
                             </ul>
                         </div>
-                        <div className='eleos'>
+                        <div className='db-services'>
                             <p><i><strong>DB Services - Application Developer</strong></i></p><br/>
                             <ul style={{'listStyleType':'disc'}}>
                                 <li>

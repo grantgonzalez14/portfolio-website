@@ -5,33 +5,72 @@ import '../css/Home.scss';
 function Home() {
     const data_aos_animation_time = 2000;
     const [mobile, setMobile] = useState(isMobile);
-    // const [responseData, setResponseData] = useState(null);
-    // const [isLoading, setIsLoading] = useState(null);
-    // const [index, setIndex] = useState(0);
-    // const [error, setError] = useState(null);
-    // const [loadingTextList] = useState(['This joke is going to be hilarious...', 'Get ready to laugh...', 'Here it comes!']);
-    // const [loadingText, setLoadingText] = useState(loadingTextList[index]);
+    const [responseData, setResponseData] = useState(null);
+    const [isLoading, setIsLoading] = useState(null);
+    const [index, setIndex] = useState(Math.floor(Math.random() * 7));
+    const [loadingTextList] = useState(['This joke is going to be hilarious...', 'Get ready to laugh...', 'This one is going to be a real knee-slapper...', 'You\'re in for a good laugh with this one...', 'Get your funny bone ready...', 'Brace yourself for some humor...', 'Laughing is inevitable with this joke...']);
+    const [jokeText, setJokeText] = useState({jokeType: '', setup: '', delivery: '', showDelivery: false, joke: ''})
+    const [loadingText, setLoadingText] = useState(loadingTextList[index]);
+    const [isVisible, setIsVisible] = useState(true);
 
     
-
-    // const tellJoke = () => {
-    //     // try {
-    //     //     const response = await fetch('api call here');
-    //     //     if (!response.ok) {
-    //     //         throw new Error('Failed to fetch data');
-    //     //     }
-    //     //     const data = await response.json();
-    //     //     setResponseData(data);
-    //     //     setIsLoading(false);
-    //     // } catch (error) {
-    //     //     setError(error);
-    //     //     setIsLoading(false);
-    //     // }
-    //     setIsLoading(true);
-    //     setTimeout(() => {
-    //         setResponseData({data: 'received!'});
-    //     })
-    // };
+    const tellJoke = async () => {
+        const baseUrl = 'https://v2.jokeapi.dev';
+        const categories = ['Misc', 'Programming', 'Pun', 'Spooky', 'Christmas'];
+        const params = [
+            'format=json',
+            'blacklistFlags=nsfw,religious,racist,political,sexist,explicit',
+            'lang=en',
+            'safe-mode'
+        ];
+    
+        setIsLoading(true);
+    
+        try {
+            const response = await Promise.race([
+                fetch(`${baseUrl}/joke/${categories.join(',')}?${params.join('&')}`, { method: 'GET' }),
+                new Promise((resolve, reject) => {
+                    setTimeout(() => reject(new Error('Request timed out')), 15000); // Timeout after 15 seconds
+                })
+            ]);
+    
+            if (!response.ok) {
+                setJokeText({ jokeType: 'single part', joke: 'I couldn\'t think of a joke :(' });
+                throw new Error('Network response was not ok');
+            }
+    
+            const data = await response.json();
+            setResponseData(data);
+    
+            let intervalID;
+            if (data.type === 'twopart') {
+                setJokeText({
+                    jokeType: 'two part',
+                    setup: data.setup,
+                    delivery: data.delivery
+                });
+                intervalID = setInterval(() => {
+                    setJokeText({
+                        jokeType: 'two part',
+                        setup: data.setup,
+                        delivery: data.delivery,
+                        showDelivery: true
+                    });
+                    clearInterval(intervalID);
+                }, 3000);
+            } else {
+                setJokeText({
+                    jokeType: 'single part',
+                    joke: data.joke
+                });
+            }
+        } catch (error) {
+            setJokeText({ jokeType: 'single part', joke: 'I couldn\'t think of a joke :(' });
+            console.error(error);
+        } finally {
+            setIsLoading(false);
+        }
+    };
     
     useEffect(() => {
         const handleResize = () => setMobile(window.innerWidth <= 925);
@@ -39,24 +78,27 @@ function Home() {
         return () => window.removeEventListener('resize', handleResize);
     }, [mobile]);
 
-    // useEffect(() => {
-    //     tellJoke();
-    // }, []);
-
-    // useEffect(() => {
-    //     if (isLoading) {
-    //         const updateText = () => {
-    //             if (responseData !== null) {
-    //                 clearInterval(intervalID);
-    //                 return;
-    //             }
-    //             setLoadingText(loadingTextList[index]);
-    //             setIndex(prevIndex => (prevIndex === loadingTextList.length - 1 ? prevIndex : prevIndex + 1));
-    //         }
-    //         const intervalID = setInterval(updateText, 3000);
-    //         return () => clearInterval(intervalID);
-    //     }
-    // }, [isLoading, responseData, index, loadingTextList]);
+    useEffect(() => {
+        if (isLoading === true) {
+            const updateText = () => {
+                if (responseData !== null) {
+                    clearInterval(intervalID);
+                    return;
+                }
+                setIsVisible(false); // Fade out
+                setTimeout(() => {
+                    setIndex(prevIndex => {
+                        const newIndex = prevIndex === loadingTextList.length - 1 ? 0 : prevIndex + 1;
+                        setLoadingText(loadingTextList[newIndex]);
+                        return newIndex;
+                    });
+                    setIsVisible(true); // Fade in
+                  }, 1000);
+            }
+            const intervalID = setInterval(updateText, 5000);
+            return () => clearInterval(intervalID);
+        }
+    }, [isLoading, responseData, index, loadingTextList]);
 
     return (
         <>
@@ -91,11 +133,23 @@ function Home() {
                     clients and team members. That's why I'm committed to staying up-to-date with the latest trends and best
                     practices in full-stack development, and I'm always looking for new opportunities to learn and grow.<br/><br/>
                 </h2>
-                {/* {isLoading === true && 
-                <h2>
+                {isLoading === true &&
+                <h2 className={`joke-container fade-container ${isVisible ? 'visible' : 'hidden'}`}>
                     {loadingText}
                 </h2>}
-                <button className='joke-button' onClick={tellJoke}>Click for a joke!</button> */}
+                {isLoading === false && jokeText.jokeType === 'two part' &&
+                <h2 className='joke-container'>
+                    {jokeText.setup}
+                </h2>}
+                {isLoading === false && jokeText.jokeType === 'two part' && jokeText.showDelivery === true &&
+                <h2 className='joke-container'>
+                    {jokeText.delivery}
+                </h2>}
+                {isLoading === false && jokeText.jokeType === 'single part' &&
+                <h2 className='joke-container'>
+                    {jokeText.joke}
+                </h2>}
+                <button className='joke-button' onClick={tellJoke}>Click for a joke!</button>
             </div>
         </>
     );
