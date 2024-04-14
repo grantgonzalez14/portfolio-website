@@ -30,7 +30,7 @@ function Home() {
             const response = await Promise.race([
                 fetch(`${baseUrl}/joke/${categories.join(',')}?${params.join('&')}`, { method: 'GET' }),
                 new Promise((resolve, reject) => {
-                    setTimeout(() => reject(new Error('Request timed out')), 15000); // Timeout after 15 seconds
+                    setTimeout(() => reject(new Error('Request timed out')), 15000);
                 })
             ]);
     
