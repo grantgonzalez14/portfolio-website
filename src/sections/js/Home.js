@@ -8,7 +8,15 @@ function Home() {
     const [responseData, setResponseData] = useState(null);
     const [isLoading, setIsLoading] = useState(null);
     const [index, setIndex] = useState(Math.floor(Math.random() * 7));
-    const [loadingTextList] = useState(['This joke is going to be hilarious...', 'Get ready to laugh...', 'This one is going to be a real knee-slapper...', 'You\'re in for a good laugh with this one...', 'Get your funny bone ready...', 'Brace yourself for some humor...', 'Laughing is inevitable with this joke...']);
+    const [loadingTextList] = useState([
+        'This joke is going to be hilarious...', 
+        'Get ready to laugh...', 
+        'This one is going to be a real knee-slapper...', 
+        'You\'re in for a good laugh with this one...', 
+        'Get your funny bone ready...', 
+        'Brace yourself for some humor...', 
+        'Laughing is inevitable with this joke...'
+    ]);
     const [jokeText, setJokeText] = useState({jokeType: '', setup: '', delivery: '', showDelivery: false, joke: ''})
     const [loadingText, setLoadingText] = useState(loadingTextList[index]);
     const [isVisible, setIsVisible] = useState(true);
@@ -123,7 +131,7 @@ function Home() {
             <div className='bio' data-aos='zoom-in' data-aos-duration={data_aos_animation_time}>
                 <h1 className='title'>Grant Gonzalez - Software Developer</h1>
                 <h2 className='about-me'>
-                    Hi, I'm Grant! Welcome to my website! I'm an application developer and consultant at <a href='https://www.dbservices.com' target='__blank' className='db-link'>DB Services</a> that 
+                    Hi, I'm Grant! Welcome to my website! I'm an application developer and consultant at <a href='https://dbservices.com/about/people/grant-gonzalez' target='__blank' className='db-link'>DB Services</a> that 
                     specializes full-stack development! I'm a results-driven developer with a passion for creating engaging, 
                     interactive, and visually appealing applications. With a deep understanding of database management principles and experience with
                     technologies such as FileMaker, Claris Studio, Claris Connect, and Claris Server I specialize in bringing
