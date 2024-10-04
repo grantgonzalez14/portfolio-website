@@ -157,6 +157,10 @@ function Home() {
                 <h2 className='joke-container'>
                     {jokeText.joke}
                 </h2>}
+                {/* 
+                    The below button is hidden because I don't want it, but the site won't deploy without it since it'll be
+                    unreferenced. Keeping the code in the file though in case I wanna use it somewhere else.
+                */}
                 <button className='joke-button' onClick={tellJoke}>Click for a joke!</button>
             </div>
         </>
