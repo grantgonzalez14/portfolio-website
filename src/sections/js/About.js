@@ -17,9 +17,8 @@ function About() {
                 <div className='about-container' data-aos='fade-up' data-aos-duration='1000'>
                     <h1 className='about-header'>About Me</h1>
                     <div className='bio'>
-                        <p>I'm Grant! I'm currently working as a software developer in the Indianapolis area I'm a recent 
-                            computer science graduate from Clemson University. I'm an alumni member of Theta Chi fraternity 
-                            and have held the executive position of Scholarship Chair in the past.</p>
+                        <p>I'm Grant! I'm currently working as a full-stack software developer in New York City. I'm a recent 
+                            computer science graduate from Clemson University and am an alumni member of Theta Chi fraternity.</p>
                     </div>
                     <br/><br/>
                     
@@ -28,6 +27,25 @@ function About() {
                     </div>
                     
                     <div className='previous-experience'>
+                    <div className='db-services'>
+                            <p><i><strong>DB Services - Application Developer</strong></i></p><br/>
+                            <ul style={{'listStyleType':'disc'}}>
+                                <li>
+                                    Develops custom FileMaker solutions for clients, leveraging advanced scripting, layout design, and 
+                                    database management techniques to create intuitive and efficient applications.
+                                </li><br/>
+                                <li>
+                                    Implemented API integrations to enhance functionality and connectivity, seamlessly integrating third-party 
+                                    services such as Stripe payment gateways, BackBlaze cloud photo storage, and Amazon selling partner services
+                                    platforms into FileMaker solutions.
+                                </li><br/>
+                                <li>
+                                    Contributes to the development lifecycle of FileMaker projects, from initial concept to deployment, ensuring 
+                                    adherence to project timelines, budget constraints, and quality standards, while actively communicating with 
+                                    stakeholders to gather feedback and refine solutions as needed.
+                                </li>
+                            </ul>
+                        </div>
                         <div className='qualtrics'>
                             <p><i><strong>Qualtrics - Software Test Engineer Intern</strong></i></p><br/>
                             <ul style={{'listStyleType':'disc'}}>
@@ -54,25 +72,7 @@ function About() {
                                 </li>
                             </ul>
                         </div>
-                        <div className='db-services'>
-                            <p><i><strong>DB Services - Application Developer</strong></i></p><br/>
-                            <ul style={{'listStyleType':'disc'}}>
-                                <li>
-                                    Develop custom FileMaker solutions for clients, leveraging advanced scripting, layout design, and 
-                                    database management techniques to create intuitive and efficient applications.
-                                </li><br/>
-                                <li>
-                                    Implemented API integrations to enhance functionality and connectivity, seamlessly integrating third-party 
-                                    services such as Stripe payment gateways, BackBlaze cloud photo storage, and Amazon selling partner services
-                                    platforms into FileMaker solutions.
-                                </li><br/>
-                                <li>
-                                    Contributed to the development lifecycle of FileMaker projects, from initial concept to deployment, ensuring 
-                                    adherence to project timelines, budget constraints, and quality standards, while actively communicating with 
-                                    stakeholders to gather feedback and refine solutions as needed.
-                                </li>
-                            </ul>
-                        </div>
+                        
                     </div>
                 </div>
             </section>
