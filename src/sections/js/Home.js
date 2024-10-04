@@ -157,7 +157,7 @@ function Home() {
                 <h2 className='joke-container'>
                     {jokeText.joke}
                 </h2>}
-                {/* <button className='joke-button' onClick={tellJoke}>Click for a joke!</button> */}
+                <button className='joke-button' onClick={tellJoke}>Click for a joke!</button>
             </div>
         </>
     );
