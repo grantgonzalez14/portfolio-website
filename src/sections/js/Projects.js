@@ -87,9 +87,9 @@ function Projects() {
                                 <img src='assets/icons/icons8-html-5.svg' alt='HTML5' loading='lazy' className='project-icon' />
                             </p>
                             <h4>Description:<p>
-                            This portfolio website was custom-built for Brennan Schmidt, an actress based in New York City, 
-                            to showcase her professional work and achievements. Designed with a sleek and responsive interface, 
-                            the site allows users to explore Brennan's creative portfolio effortlessly across all devices.
+                                This portfolio website was custom-built for Brennan Schmidt, an actress based in New York City, 
+                                to showcase her professional work and achievements. Designed with a sleek and responsive interface, 
+                                the site allows users to explore Brennan's creative portfolio effortlessly across all devices.
                             </p></h4>
                             <a href='https://brennanschmidt.com/' target='_blank' rel='noreferrer'><strong>Check it out!</strong></a>
                         </div>

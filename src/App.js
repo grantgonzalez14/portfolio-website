@@ -1,4 +1,6 @@
-import './App.scss';
+import { Element } from 'react-scroll';
+import { Parallax, ParallaxLayer } from '@react-spring/parallax';
+import { useEffect, useState, useRef } from 'react';
 import Aos from 'aos';
 import Navbar from './components/js/Navbar';
 import Home from './sections/js/Home';
@@ -7,9 +9,8 @@ import Education from './sections/js/Education';
 import Skills from './sections/js/Skills';
 import Projects from './sections/js/Projects';
 import Contact from './sections/js/Contact';
-import { Element } from 'react-scroll';
-import { Parallax, ParallaxLayer } from '@react-spring/parallax';
-import { useEffect, useState, useRef } from 'react';
+import './App.scss';
+
 
 function App() {
 	Aos.init();
